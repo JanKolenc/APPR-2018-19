@@ -1,6 +1,6 @@
-# Analiza podatkov s programom R, 2018/19
+## Analiza podatkov s programom R, 2018/19
 
-# Jan Kolenc
+# Revščina v Sloveniji
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2018/19
 
@@ -9,8 +9,26 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2018/19
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
-Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+V svoji projektni nalogi bom analiziral kazalnike revščine v Sloveniji.
+
+## Podatki
+Svoje podatke bom črpal s statističnega urada republike slovenije. Pregledal bom podatke o pragu revščine glede na velikost družine.
+Nato pa še podatke o tveganju revščine glede na starost in glede na pridobljeno izobrazbo.
+
+## Tabele
+1. tabela(Prag tveganja revščine): meritve, tip gospodinjstva, denarna enota, leto
+2. tabela(Stopnja tveganja revščine glede na starost in spol): meritve, starostne skupine, spol, leto
+3. tabela(Stopnja tveganja revščine glede na dokončano izobrazbo): meritve, starostne skupine, izobrazba, spol, leto
+
+## Povezave do tabel
+https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=0867106S&ti=&path=../Database/Dem_soc/08_zivljenjska_raven/08_silc_kazalniki_revsc/05_08671_prag_tveg_revscine/&lang=2
+
+https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=0867206S&ti=&path=../Database/Dem_soc/08_zivljenjska_raven/08_silc_kazalniki_revsc/10_08672_stopnja_tveg_revcine/&lang=2
+
+https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=0867207S&ti=&path=../Database/Dem_soc/08_zivljenjska_raven/08_silc_kazalniki_revsc/10_08672_stopnja_tveg_revcine/&lang=2
+
+
+
 
 ## Program
 
