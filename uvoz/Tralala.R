@@ -44,6 +44,99 @@ colnames(izobrazba16z.stopnja) <- c("Izobrazba","Leto","Odstotki")
 #========================================================================================================
 #TABELA2 - Izobrazba 18+ let
 
+izobrazba18m <- izobrazba[c(9, 11, 13,15),-1]
+
+izobrazba18m.stopnja <- melt(izobrazba18m, id.vars="Izobrazba", measure.vars=names(izobrazba18m)[-1],
+                             variable.name="Leto", value.name="Odstotki",
+                             na.rm=TRUE)
+izobrazba18m.stopnja <- izobrazba18m.stopnja[5:44,]
+
+rownames(izobrazba18m.stopnja) <- seq(length=nrow(izobrazba18m.stopnja))
+
+rownames(izobrazba18m.stopnja) <- seq(length=nrow(izobrazba18m.stopnja))
+
+izobrazba18m.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba18m.stopnja$Leto))
+
+colnames(izobrazba18m.stopnja) <- c("Izobrazba","Leto","Odstotki")
+
+izobrazba18z <- izobrazba[c(10, 12, 14,16),-1]
+
+izobrazba18z.stopnja <- melt(izobrazba18z, id.vars="Izobrazba", measure.vars=names(izobrazba18z)[-1],
+                             variable.name="Leto", value.name="Odstotki",
+                             na.rm=TRUE)
+izobrazba18z.stopnja <- izobrazba18z.stopnja[5:44,]
+
+rownames(izobrazba18z.stopnja) <- seq(length=nrow(izobrazba18z.stopnja))
+
+izobrazba18z.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba18z.stopnja$Leto))
+
+colnames(izobrazba18z.stopnja) <- c("Izobrazba","Leto","Odstotki")
+
+#========================================================================================================
+#TABELA3 - Izobrazba 18-64 let
+
+izobrazba64m <- izobrazba[c(17, 19, 21,23),-1]
+
+izobrazba64m.stopnja <- melt(izobrazba64m, id.vars="Izobrazba", measure.vars=names(izobrazba64m)[-1],
+                             variable.name="Leto", value.name="Odstotki",
+                             na.rm=TRUE)
+izobrazba64m.stopnja <- izobrazba64m.stopnja[5:44,]
+
+rownames(izobrazba64m.stopnja) <- seq(length=nrow(izobrazba64m.stopnja))
+
+rownames(izobrazba64m.stopnja) <- seq(length=nrow(izobrazba64m.stopnja))
+
+izobrazba64m.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba64m.stopnja$Leto))
+
+colnames(izobrazba64m.stopnja) <- c("Izobrazba","Leto","Odstotki")
+
+izobrazba64z <- izobrazba[c(18, 20, 22,24),-1]
+
+izobrazba64z.stopnja <- melt(izobrazba64z, id.vars="Izobrazba", measure.vars=names(izobrazba64z)[-1],
+                             variable.name="Leto", value.name="Odstotki",
+                             na.rm=TRUE)
+izobrazba64z.stopnja <- izobrazba64z.stopnja[5:44,]
+
+rownames(izobrazba64z.stopnja) <- seq(length=nrow(izobrazba64z.stopnja))
+
+izobrazba64z.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba64z.stopnja$Leto))
+
+colnames(izobrazba64z.stopnja) <- c("Izobrazba","Leto","Odstotki")
+
+#========================================================================================================
+#TABELA4 - Izobrazba 65+ let
+
+izobrazba65m <- izobrazba[c(25, 27, 29,31),-1]
+
+izobrazba65m.stopnja <- melt(izobrazba65m, id.vars="Izobrazba", measure.vars=names(izobrazba65m)[-1],
+                             variable.name="Leto", value.name="Odstotki",
+                             na.rm=TRUE)
+izobrazba65m.stopnja <- izobrazba65m.stopnja[5:44,]
+
+rownames(izobrazba65m.stopnja) <- seq(length=nrow(izobrazba65m.stopnja))
+
+rownames(izobrazba65m.stopnja) <- seq(length=nrow(izobrazba65m.stopnja))
+
+izobrazba65m.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba65m.stopnja$Leto))
+
+colnames(izobrazba65m.stopnja) <- c("Izobrazba","Leto","Odstotki")
+
+izobrazba65z <- izobrazba[c(26, 28, 30,32),-1]
+
+izobrazba65z.stopnja <- melt(izobrazba65z, id.vars="Izobrazba", measure.vars=names(izobrazba65z)[-1],
+                             variable.name="Leto", value.name="Odstotki",
+                             na.rm=TRUE)
+izobrazba65z.stopnja <- izobrazba65z.stopnja[5:44,]
+
+rownames(izobrazba65z.stopnja) <- seq(length=nrow(izobrazba65z.stopnja))
+
+izobrazba65z.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba65z.stopnja$Leto))
+
+colnames(izobrazba65z.stopnja) <- c("Izobrazba","Leto","Odstotki")
+
+#========================================================================================================
+#TABELA5 - Prag
+
 prag <- read_csv2("prag.csv", col.names=c("1","Valuta", "Tip gospodinjstva", 2005:2017),
                        na="-",dec = ".") 
 prag <- prag[,-1]
