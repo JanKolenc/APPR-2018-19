@@ -21,6 +21,12 @@ izobrazba16m.stopnja <- izobrazba16m.stopnja[5:44,]
 
 rownames(izobrazba16m.stopnja) <- seq(length=nrow(izobrazba16m.stopnja))
 
+rownames(izobrazba16m.stopnja) <- seq(length=nrow(izobrazba16m.stopnja))
+
+izobrazba16m.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba16m.stopnja$Leto))
+
+colnames(izobrazba16m.stopnja) <- c("Izobrazba","Leto","Odstotki")
+
 izobrazba16z <- izobrazba[c(2, 4, 6,8),-1]
 
 izobrazba16z.stopnja <- melt(izobrazba16z, id.vars="Izobrazba", measure.vars=names(izobrazba16z)[-1],
@@ -30,9 +36,9 @@ izobrazba16z.stopnja <- izobrazba16z.stopnja[5:44,]
 
 rownames(izobrazba16z.stopnja) <- seq(length=nrow(izobrazba16z.stopnja))
 
-izobrazba16z.stopnja$Leto <- data.frame(as.numeric(gsub("X([0-9]+)","\\1",izobrazba16z.stopnja$Leto)))
+izobrazba16z.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba16z.stopnja$Leto))
 
-colnames(izobrazba16z.stopnja)<- c("Izobrazba","Leto","Odstotki")
+colnames(izobrazba16z.stopnja) <- c("Izobrazba","Leto","Odstotki")
 
 
 #========================================================================================================
