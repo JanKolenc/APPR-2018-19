@@ -16,13 +16,13 @@ Nato pa še podatke o tveganju revščine glede na starost in glede na pridoblje
 
 ## Tabele
 1. tabela(Prag tveganja revščine): meritve, tip gospodinjstva, denarna enota, leto
-2. tabela(Stopnja tveganja revščine glede na starost in spol): meritve, starostne skupine, spol, leto
+2. tabela(Stopnja tveganja revščine glede na statistično regijo): meritve, regija, leto
 3. tabela(Stopnja tveganja revščine glede na dokončano izobrazbo): meritve, starostne skupine, izobrazba, spol, leto
 
 ## Povezave do tabel
 https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=0867106S&ti=&path=../Database/Dem_soc/08_zivljenjska_raven/08_silc_kazalniki_revsc/05_08671_prag_tveg_revscine/&lang=2
 
-https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=0867206S&ti=&path=../Database/Dem_soc/08_zivljenjska_raven/08_silc_kazalniki_revsc/10_08672_stopnja_tveg_revcine/&lang=2
+https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=0867636S&ti=&path=../Database/Dem_soc/08_zivljenjska_raven/08_silc_kazalniki_revsc/30_08676_kazaln_podp_strat_EU_2020/&lang=2
 
 https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=0867207S&ti=&path=../Database/Dem_soc/08_zivljenjska_raven/08_silc_kazalniki_revsc/10_08672_stopnja_tveg_revcine/&lang=2
 
