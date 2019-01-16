@@ -157,7 +157,7 @@ I2017 <- izobrazba[c(1, 2, 3,13)]
 colnames(I2017) <- c("Starost","Izobrazba","Spol","2017")
 
 #========================================================================================================
-#TABELA15 - Prag
+#TABELE 15-24 - Prag
 prag <- read.csv2("prag.csv", col.names=c("Stopnja1","Stopnja","Regija",2005:2017),
                     na="-",dec = ".", header = FALSE) 
 
@@ -185,7 +185,7 @@ colnames(P2017) <- c("Tip gospodinjstva","2017")
 
 
 #========================================================================================================
-#TABELE 16-25 - Regije
+#TABELE 25-34 - Regije
 
 regije <- read.csv2("regije.csv", col.names=c("Stopnja","Regija",2008:2017),
                        na="-",dec = ".", header = FALSE) 
