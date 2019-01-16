@@ -133,9 +133,31 @@ rownames(izobrazba65z.stopnja) <- seq(length=nrow(izobrazba65z.stopnja))
 izobrazba65z.stopnja$Leto <- as.numeric(gsub("X([0-9]+)","\\1",izobrazba65z.stopnja$Leto))
 
 colnames(izobrazba65z.stopnja) <- c("Izobrazba","Leto","Odstotki")
+#========================================================================================================
+#TABELE 5-14  - Leta 2008-2009
+T2008 <- izobrazba[1:4]
+colnames(T2008) <- c("Starost","Izobrazba","Spol","2008")
+T2009 <- izobrazba[c(1, 2, 3,5)]
+colnames(T2009) <- c("Starost","Izobrazba","Spol","2009")
+T2010 <- izobrazba[c(1, 2, 3,6)]
+colnames(T2010) <- c("Starost","Izobrazba","Spol","2010")
+T2011 <- izobrazba[c(1, 2, 3,7)]
+colnames(T2011) <- c("Starost","Izobrazba","Spol","2011")
+T2012 <- izobrazba[c(1, 2, 3,8)]
+colnames(T2012) <- c("Starost","Izobrazba","Spol","2012")
+T2013 <- izobrazba[c(1, 2, 3,9)]
+colnames(T2013) <- c("Starost","Izobrazba","Spol","2013")
+T2014 <- izobrazba[c(1, 2, 3,10)]
+colnames(T2014) <- c("Starost","Izobrazba","Spol","2014")
+T2015 <- izobrazba[c(1, 2, 3,11)]
+colnames(T2015) <- c("Starost","Izobrazba","Spol","2015")
+T2016 <- izobrazba[c(1, 2, 3,12)]
+colnames(T2016) <- c("Starost","Izobrazba","Spol","2016")
+T2017 <- izobrazba[c(1, 2, 3,13)]
+colnames(T2017) <- c("Starost","Izobrazba","Spol","2017")
 
 #========================================================================================================
-#TABELA5 - Prag
+#TABELA15 - Prag
 
 prag <- read_csv2("prag.csv", col.names=c("1","Valuta", "Tip gospodinjstva", 2005:2017),
                        na="-",dec = ".") 
@@ -144,4 +166,6 @@ prag <- prag[,-1]
 starost <- read.csv2("starost.csv", col.names=c("1","Starost", "Spol",2005:2017),
                        na="-",dec = ".",encoding = "UTF-8") 
 starost <- starost[,-1]
+
+
 
