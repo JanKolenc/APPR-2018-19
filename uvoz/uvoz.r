@@ -158,6 +158,31 @@ colnames(I2017) <- c("Starost","Izobrazba","Spol","2017")
 
 #========================================================================================================
 #TABELA15 - Prag
+prag <- read.csv2("prag.csv", col.names=c("Stopnja1","Stopnja","Regija",2005:2017),
+                    na="-",dec = ".", header = FALSE) 
+
+
+P2008 <- prag[c(3, 7)]
+colnames(P2008) <- c("Tip gospodinjstva","2008")
+P2009 <- prag[c(3, 8)]
+colnames(P2009) <- c("Tip gospodinjstva","2009")
+P2010 <- prag[c(3, 9)]
+colnames(P2010) <- c("Tip gospodinjstva","2010")
+P2011 <- prag[c(3,10)]
+colnames(P2011) <- c("Tip gospodinjstva","2011")
+P2012 <- prag[c(3,11)]
+colnames(P2012) <- c("Tip gospodinjstva","2012")
+P2013 <- prag[c(3, 12)]
+colnames(P2013) <- c("Tip gospodinjstva","2013")
+P2014 <- prag[c(3,13)]
+colnames(P2014) <- c("Tip gospodinjstva","2014")
+P2015 <- prag[c(3,14)]
+colnames(P2015) <- c("Tip gospodinjstva","2015")
+P2016 <- prag[c(3,15)]
+colnames(P2016) <- c("Tip gospodinjstva","2016")
+P2017 <- prag[c(3, 16)]
+colnames(P2017) <- c("Tip gospodinjstva","2017")
+
 
 #========================================================================================================
 #TABELE 16-25 - Regije
