@@ -7,7 +7,7 @@ output:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
-runtime: shiny
+
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -36,4 +36,11 @@ source("uvoz/uvoz.r", encoding="UTF-8")
 
 Uvozil sem podatke o revščini v obliki CSV s statističnega urada. 
 Podatke imam v 3 razpredelnicah v obliki *tidy data* ki sem jih dejansko razbil na 34 razpredelnic po letih.
+
+sl <- locale("sl", encoding = "Windows-1250", decimal_mark=".")
+izobrazba <- read_delim("podatki/izobrazba.csv", ";", na="-", locale=sl,
+                        col_names=c("1", "Starost", "Izobrazba", "Spol", 2008:2017)) %>%
+  select(-1) %>% melt(id.vars=1:3, variable.name="Leto",
+                      value.name="Odstotki", na.rm=TRUE) %>%
+  mutate(Leto=parse_number(Leto))
 
