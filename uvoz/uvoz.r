@@ -158,9 +158,32 @@ colnames(I2017) <- c("Starost","Izobrazba","Spol","2017")
 
 #========================================================================================================
 #TABELA15 - Prag
-prag <- read_csv2("prag.csv")
-colnames(prag) <- c("1","Valuta", "Tip gospodinjstva", 2005:2017)
 
+#========================================================================================================
+#TABELE 16-25 - Regije
 
+regije <- read.csv2("regije.csv", col.names=c("Stopnja","Regija",2008:2017),
+                       na="-",dec = ".", header = FALSE) 
+regije <- regije[,-1]
 
+R2008 <- regije[1:2]
+colnames(R2008) <- c("Regija","2008")
+R2009 <- regije[c(1, 3)]
+colnames(R2009) <- c("Regija","2009")
+R2010 <- regije[c(1, 4)]
+colnames(R2010) <- c("Regija","2010")
+R2011 <- regije[c(1,5)]
+colnames(R2011) <- c("Regija","2011")
+R2012 <- regije[c(1,6)]
+colnames(R2012) <- c("Regija","2012")
+R2013 <- regije[c(1, 7)]
+colnames(R2013) <- c("Regija","2013")
+R2014 <- regije[c(1,8)]
+colnames(R2014) <- c("Regija","2014")
+R2015 <- regije[c(1,9)]
+colnames(R2015) <- c("Regija","2015")
+R2016 <- regije[c(1,10)]
+colnames(R2016) <- c("Regija","2016")
+R2017 <- regije[c(1, 11)]
+colnames(R2017) <- c("Regija","2017")
 
