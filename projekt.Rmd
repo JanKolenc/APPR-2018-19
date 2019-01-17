@@ -30,17 +30,31 @@ Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom kakš
 
 # Obdelava, uvoz in čiščenje podatkov
 
-```{r uvoz, echo=FALSE, message=FALSE}
+```{r uvoz, echo=FALSE, message=FALSE, warning=FALSE}
 source("uvoz/uvoz.r", encoding="UTF-8")
 ```
 
 Uvozil sem podatke o revščini v obliki CSV s statističnega urada. 
 Podatke imam v 3 razpredelnicah v obliki *tidy data* ki sem jih dejansko razbil na 34 razpredelnic po letih.
 
-sl <- locale("sl", encoding = "Windows-1250", decimal_mark=".")
-izobrazba <- read_delim("podatki/izobrazba.csv", ";", na="-", locale=sl,
-                        col_names=c("1", "Starost", "Izobrazba", "Spol", 2008:2017)) %>%
-  select(-1) %>% melt(id.vars=1:3, variable.name="Leto",
-                      value.name="Odstotki", na.rm=TRUE) %>%
-  mutate(Leto=parse_number(Leto))
 
+
+```{r izobrazba1, echo=FALSE}
+kable(head(izobrazba1))
+```
+
+STOPNJA TVEGANJA REVŠČINE je odstotek oseb, ki živijo v gospodinjstvih z ekvivalentnim (neto) razpoložljivim dohodkom, nižjim od praga tveganja revščine. PRAG TVEGANJA REVŠČINE se določi (izračuna) kot 60 % mediane ekvivalentnega (neto) razpoložljivega dohodka vseh gospodinjstev. Za izračun EKVIVALENTNEGA DOHODKA (dohodka na ekvivalentnega odraslega člana gospodinjstva) se uporablja prilagojeno OECD-jevo ekvivalenčno lestvico. Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 ali več let, pa utež 0,5.
+
+```{r regije1, echo=FALSE}
+kable(head(regije1))
+```
+
+STOPNJA TVEGANJA REVŠČINE je odstotek oseb, ki živijo v gospodinjstvih z ekvivalentnim (neto) razpoložljivim dohodkom, nižjim od praga tveganja revščine. PRAG TVEGANJA REVŠČINE se določi (izračuna) kot 60 % mediane ekvivalentnega (neto) razpoložljivega dohodka vseh gospodinjstev. Za izračun EKVIVALENTNEGA DOHODKA (dohodka na ekvivalentnega odraslega člana gospodinjstva) se uporablja prilagojeno OECD-jevo ekvivalenčno lestvico. Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 ali več let, pa utež 0,5.
+
+```{r prag1, echo=FALSE}
+kable(head(prag1))
+```
+
+PRAG TVEGANJA REVŠČINE je opredeljen s 60 % mediane ekvivalentnega neto razpoložljivega dohodka vseh gospodinjstev ob upoštevanju OECD-jeve prilagojene ekvivalenčne lestvice.
+Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 let ali več, pa utež 0,5. Štiričlansko gospodinjstvo dveh odraslih in dveh otrok ima tako 2,1 ekvivalentnega odraslega člana (izračun: 1x1+1x0,5+2x0,3=2,1), dvočlansko gospodinjstvo dveh odraslih oseb pa 1,5 ekvivalentnega člana (izračun: 1x1+1x0,5=1,5). 
+EKVIVALENTNI DOHODEK (dohodek na ekvivalentnega odraslega člana gospodinjstva) se izračuna tako, da se sešteje dohodke vseh članov gospodinjstva in nato deli s številom ekvivalentnih odraslih članov v gospodinjstvu.
