@@ -1,13 +1,22 @@
 library(readr)
 library(reshape2)
 library(dplyr)
+library(tidyr)
 
-sl <- locale("sl", decimal_mark = ",", grouping_mark = ".")
-sl <- locale(encoding = "Windows-1250")
 
-izobrazba <- read.csv2("izobrazba.csv", col.names=c("1","Starost", "Izobrazba", "Spol",2008:2017),
-                na="-",dec = ".", header = FALSE) 
+
+sl <- locale("sl", encoding = "Windows-1250", decimal_mark=".")
+
+izobrazba <- read.csv2("podatki/izobrazba.csv", col.names=c("1","Starost", "Izobrazba", "Spol",2008:2017),
+                       na="-",dec = ".", header = FALSE) 
 izobrazba <- izobrazba[,-1]
+
+izobrazba1 <- read_delim("podatki/izobrazba.csv", ";", na="-", locale=sl,
+                        col_names=c("1", "Starost", "Izobrazba", "Spol", 2008:2017)) %>%
+  select(-1) %>% melt(id.vars=1:3, variable.name="Leto",
+                      value.name="Odstotki", na.rm=TRUE) 
+izobrazba1$Leto <- as.character(izobrazba1$Leto) %>% parse_number()
+
 
 #========================================================================================================
 #TABELA1 - Izobrazba 16+ let
@@ -158,7 +167,15 @@ colnames(I2017) <- c("Starost","Izobrazba","Spol","2017")
 
 #========================================================================================================
 #TABELE 15-24 - Prag
-prag <- read.csv2("prag.csv", col.names=c("Stopnja1","Stopnja","Regija",2005:2017),
+
+prag1 <- read_delim("podatki/prag.csv", ";", na="-", locale=sl,
+                         col_names=c("Stopnja1","Stopnja","Regija",2005:2017)) %>%
+  select(-1) %>% melt(id.vars=1:2, variable.name="Leto",
+                      value.name="Odstotki", na.rm=TRUE) 
+prag1$Leto <- as.character(prag1$Leto) %>% parse_number()
+prag1 <- prag1[,-1]
+
+prag <- read.csv2("podatki/prag.csv", col.names=c("Stopnja1","Stopnja","Regija",2005:2017),
                     na="-",dec = ".", header = FALSE) 
 
 
@@ -187,7 +204,13 @@ colnames(P2017) <- c("Tip gospodinjstva","2017")
 #========================================================================================================
 #TABELE 25-34 - Regije
 
-regije <- read.csv2("regije.csv", col.names=c("Stopnja","Regija",2008:2017),
+regije1 <- read_delim("podatki/regije.csv", ";", na="-", locale=sl,
+                         col_names=c("Stopnja","Regija",2008:2017)) %>%
+  select(-1) %>% melt(id.vars=1, variable.name="Leto",
+                      value.name="Odstotki", na.rm=TRUE) 
+regije1$Leto <- as.character(regije1$Leto) %>% parse_number()
+
+regije <- read.csv2("podatki/regije.csv", col.names=c("Stopnja","Regija",2008:2017),
                        na="-",dec = ".", header = FALSE) 
 regije <- regije[,-1]
 
