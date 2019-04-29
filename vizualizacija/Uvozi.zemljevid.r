@@ -11,3 +11,12 @@ zemljevid <- fortify(zemljevid)
 # Izračunamo povprečno velikost družine
 povprecja <- druzine %>% group_by(obcina) %>%
   summarise(povprecje=sum(velikost.druzine * stevilo.druzin) / sum(stevilo.druzin))
+
+#Moj zemljevid
+Slovenija <- uvozi.zemljevid("http://biogeo.ucdavis.edu/data/gadm2.8/shp/SVN_adm_shp.zip",
+                             "SVN_adm1") %>% fortify()
+colnames(Slovenija)[12]<-'Regija'
+Slovenija$Regija <- gsub('GoriĹˇka', 'Goriška', Slovenija$Regija)
+Slovenija$Regija <- gsub('KoroĹˇka', 'Koroška', Slovenija$Regija)
+Slovenija$Regija <- gsub('Notranjsko-kraĹˇka', 'Notranjsko-kraška', Slovenija$Regija)
+Slovenija$Regija <- gsub('Obalno-kraĹˇka', 'Obalno-kraška', Slovenija$Regija)
