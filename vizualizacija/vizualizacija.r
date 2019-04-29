@@ -1,13 +1,15 @@
-# 3. faza: Vizualizacija podatkov
+library(ggplot2)
+library(ggvis)
+library(dplyr)
+library(rgdal)
+library(mosaic)
+library(maptools)
+library(maps)
+library(plotly)
 
-# Uvozimo zemljevid.
-zemljevid <- uvozi.zemljevid("http://baza.fmf.uni-lj.si/OB.zip", "OB",
-                             pot.zemljevida="OB", encoding="Windows-1250")
-levels(zemljevid$OB_UIME) <- levels(zemljevid$OB_UIME) %>%
-  { gsub("Slovenskih", "Slov.", .) } %>% { gsub("-", " - ", .) }
-zemljevid$OB_UIME <- factor(zemljevid$OB_UIME, levels=levels(obcine$obcina))
-zemljevid <- fortify(zemljevid)
+source(file = 'lib/uvozi.zemljevid.r', encoding = 'UTF-8')
+source('lib/libraries.r', encoding = 'UTF-8')
+source('uvoz/uvoz_test.r', encoding = 'UTF-8')
 
-# Izračunamo povprečno velikost družine
-povprecja <- druzine %>% group_by(obcina) %>%
-  summarise(povprecje=sum(velikost.druzine * stevilo.druzin) / sum(stevilo.druzin))
+graf.prostih.delovnih.mest.regije <- ggplot((data=prosta.delovna.mesta), aes(x=Leto, y=Stevilo.prostih.delovnih.mest, col=Regija)) + 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2001, 2011, 1), limits = c(2001, 2011)) + labs(title='Prosta delovna mesta Slovenije po regijah 2001-2011')
