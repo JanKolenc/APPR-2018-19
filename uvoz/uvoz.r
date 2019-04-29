@@ -235,3 +235,11 @@ colnames(R2016) <- c("Regija","2016")
 R2017 <- regije[c(1, 11)]
 colnames(R2017) <- c("Regija","2017")
 
+#========================================================================================================
+#IZVOZ V CSV
+
+write.csv2(regije1,'podatki/tidy_regije.csv', fileEncoding = 'UTF-8')
+write.csv2(izobrazba1,'podatki/tidy_izobrazba.csv', fileEncoding = 'UTF-8')
+write.csv2(prag1,'podatki/tidy_prag.csv', fileEncoding = 'UTF-8')
+
+

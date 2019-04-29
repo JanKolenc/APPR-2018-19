@@ -1,0 +1,321 @@
+"";"Starost";"Izobrazba";"Spol";"Leto";"Odstotki"
+"1";"Starost 16+";"Osnovnošolska ali manj";"Moški";2008;20,8
+"2";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2008;26,7
+"3";"Starost 16+";"Srednješolska poklicna";"Moški";2008;11,7
+"4";"Starost 16+";"Srednješolska poklicna";"Ženske";2008;14,8
+"5";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2008;7,3
+"6";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2008;8,4
+"7";"Starost 16+";"Višješolska, visokošolska";"Moški";2008;2,9
+"8";"Starost 16+";"Višješolska, visokošolska";"Ženske";2008;2,2
+"9";"Starost 18+";"Osnovnošolska ali manj";"Moški";2008;22
+"10";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2008;28
+"11";"Starost 18+";"Srednješolska poklicna";"Moški";2008;11,7
+"12";"Starost 18+";"Srednješolska poklicna";"Ženske";2008;14,8
+"13";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2008;7,3
+"14";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2008;8,5
+"15";"Starost 18+";"Višješolska, visokošolska";"Moški";2008;2,9
+"16";"Starost 18+";"Višješolska, visokošolska";"Ženske";2008;2,2
+"17";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2008;20,7
+"18";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2008;19,1
+"19";"Starost 18-64";"Srednješolska poklicna";"Moški";2008;11,4
+"20";"Starost 18-64";"Srednješolska poklicna";"Ženske";2008;13,4
+"21";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2008;7,9
+"22";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2008;7,7
+"23";"Starost 18-64";"Višješolska, visokošolska";"Moški";2008;3,3
+"24";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2008;2,3
+"25";"Starost 65+";"Osnovnošolska ali manj";"Moški";2008;28,2
+"26";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2008;39,7
+"27";"Starost 65+";"Srednješolska poklicna";"Moški";2008;13,7
+"28";"Starost 65+";"Srednješolska poklicna";"Ženske";2008;21,3
+"29";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2008;2,9
+"30";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2008;13,3
+"31";"Starost 65+";"Višješolska, visokošolska";"Moški";2008;1,3
+"32";"Starost 65+";"Višješolska, visokošolska";"Ženske";2008;1,8
+"33";"Starost 16+";"Osnovnošolska ali manj";"Moški";2009;17,1
+"34";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2009;25,3
+"35";"Starost 16+";"Srednješolska poklicna";"Moški";2009;10,3
+"36";"Starost 16+";"Srednješolska poklicna";"Ženske";2009;13,5
+"37";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2009;6,1
+"38";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2009;8,1
+"39";"Starost 16+";"Višješolska, visokošolska";"Moški";2009;3,3
+"40";"Starost 16+";"Višješolska, visokošolska";"Ženske";2009;2,1
+"41";"Starost 18+";"Osnovnošolska ali manj";"Moški";2009;18,1
+"42";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2009;26,6
+"43";"Starost 18+";"Srednješolska poklicna";"Moški";2009;10,3
+"44";"Starost 18+";"Srednješolska poklicna";"Ženske";2009;13,5
+"45";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2009;6,1
+"46";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2009;8,1
+"47";"Starost 18+";"Višješolska, visokošolska";"Moški";2009;3,3
+"48";"Starost 18+";"Višješolska, visokošolska";"Ženske";2009;2,1
+"49";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2009;17
+"50";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2009;18,2
+"51";"Starost 18-64";"Srednješolska poklicna";"Moški";2009;9,5
+"52";"Starost 18-64";"Srednješolska poklicna";"Ženske";2009;12
+"53";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2009;6,6
+"54";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2009;7,6
+"55";"Starost 18-64";"Višješolska, visokošolska";"Moški";2009;3,5
+"56";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2009;2
+"57";"Starost 65+";"Osnovnošolska ali manj";"Moški";2009;23,1
+"58";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2009;37,4
+"59";"Starost 65+";"Srednješolska poklicna";"Moški";2009;15
+"60";"Starost 65+";"Srednješolska poklicna";"Ženske";2009;19,9
+"61";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2009;3
+"62";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2009;10,9
+"63";"Starost 65+";"Višješolska, visokošolska";"Moški";2009;2,3
+"64";"Starost 65+";"Višješolska, visokošolska";"Ženske";2009;3,2
+"65";"Starost 16+";"Osnovnošolska ali manj";"Moški";2010;19,8
+"66";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2010;30,1
+"67";"Starost 16+";"Srednješolska poklicna";"Moški";2010;12,5
+"68";"Starost 16+";"Srednješolska poklicna";"Ženske";2010;15,5
+"69";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2010;7,1
+"70";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2010;8,5
+"71";"Starost 16+";"Višješolska, visokošolska";"Moški";2010;3,5
+"72";"Starost 16+";"Višješolska, visokošolska";"Ženske";2010;3,1
+"73";"Starost 18+";"Osnovnošolska ali manj";"Moški";2010;20,9
+"74";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2010;31,9
+"75";"Starost 18+";"Srednješolska poklicna";"Moški";2010;12,5
+"76";"Starost 18+";"Srednješolska poklicna";"Ženske";2010;15,4
+"77";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2010;7,1
+"78";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2010;8,5
+"79";"Starost 18+";"Višješolska, visokošolska";"Moški";2010;3,5
+"80";"Starost 18+";"Višješolska, visokošolska";"Ženske";2010;3,1
+"81";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2010;20
+"82";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2010;23
+"83";"Starost 18-64";"Srednješolska poklicna";"Moški";2010;12,8
+"84";"Starost 18-64";"Srednješolska poklicna";"Ženske";2010;13,5
+"85";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2010;7,7
+"86";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2010;8,5
+"87";"Starost 18-64";"Višješolska, visokošolska";"Moški";2010;4,1
+"88";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2010;3,3
+"89";"Starost 65+";"Osnovnošolska ali manj";"Moški";2010;25,4
+"90";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2010;44
+"91";"Starost 65+";"Srednješolska poklicna";"Moški";2010;10,2
+"92";"Starost 65+";"Srednješolska poklicna";"Ženske";2010;23,4
+"93";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2010;3,2
+"94";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2010;8,6
+"95";"Starost 65+";"Višješolska, visokošolska";"Moški";2010;1,2
+"96";"Starost 65+";"Višješolska, visokošolska";"Ženske";2010;1,9
+"97";"Starost 16+";"Osnovnošolska ali manj";"Moški";2011;21,6
+"98";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2011;29,4
+"99";"Starost 16+";"Srednješolska poklicna";"Moški";2011;14,2
+"100";"Starost 16+";"Srednješolska poklicna";"Ženske";2011;18,6
+"101";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2011;7,3
+"102";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2011;9,7
+"103";"Starost 16+";"Višješolska, visokošolska";"Moški";2011;3,7
+"104";"Starost 16+";"Višješolska, visokošolska";"Ženske";2011;2,8
+"105";"Starost 18+";"Osnovnošolska ali manj";"Moški";2011;23
+"106";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2011;30,9
+"107";"Starost 18+";"Srednješolska poklicna";"Moški";2011;14,2
+"108";"Starost 18+";"Srednješolska poklicna";"Ženske";2011;18,6
+"109";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2011;7,3
+"110";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2011;9,7
+"111";"Starost 18+";"Višješolska, visokošolska";"Moški";2011;3,7
+"112";"Starost 18+";"Višješolska, visokošolska";"Ženske";2011;2,8
+"113";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2011;21,9
+"114";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2011;21,5
+"115";"Starost 18-64";"Srednješolska poklicna";"Moški";2011;14,6
+"116";"Starost 18-64";"Srednješolska poklicna";"Ženske";2011;16,6
+"117";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2011;7,8
+"118";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2011;9,6
+"119";"Starost 18-64";"Višješolska, visokošolska";"Moški";2011;4,3
+"120";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2011;2,9
+"121";"Starost 65+";"Osnovnošolska ali manj";"Moški";2011;28,7
+"122";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2011;44,1
+"123";"Starost 65+";"Srednješolska poklicna";"Moški";2011;11,7
+"124";"Starost 65+";"Srednješolska poklicna";"Ženske";2011;26,3
+"125";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2011;4
+"126";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2011;10,5
+"127";"Starost 65+";"Višješolska, visokošolska";"Moški";2011;1,4
+"128";"Starost 65+";"Višješolska, visokošolska";"Ženske";2011;2,3
+"129";"Starost 16+";"Osnovnošolska ali manj";"Moški";2012;22
+"130";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2012;29,2
+"131";"Starost 16+";"Srednješolska poklicna";"Moški";2012;14,6
+"132";"Starost 16+";"Srednješolska poklicna";"Ženske";2012;16,9
+"133";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2012;8,6
+"134";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2012;10,9
+"135";"Starost 16+";"Višješolska, visokošolska";"Moški";2012;4
+"136";"Starost 16+";"Višješolska, visokošolska";"Ženske";2012;3,2
+"137";"Starost 18+";"Osnovnošolska ali manj";"Moški";2012;23,4
+"138";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2012;31
+"139";"Starost 18+";"Srednješolska poklicna";"Moški";2012;14,6
+"140";"Starost 18+";"Srednješolska poklicna";"Ženske";2012;16,8
+"141";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2012;8,6
+"142";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2012;10,9
+"143";"Starost 18+";"Višješolska, visokošolska";"Moški";2012;4
+"144";"Starost 18+";"Višješolska, visokošolska";"Ženske";2012;3,2
+"145";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2012;22,2
+"146";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2012;23,4
+"147";"Starost 18-64";"Srednješolska poklicna";"Moški";2012;14,6
+"148";"Starost 18-64";"Srednješolska poklicna";"Ženske";2012;15,4
+"149";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2012;9,2
+"150";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2012;11,3
+"151";"Starost 18-64";"Višješolska, visokošolska";"Moški";2012;4,4
+"152";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2012;3,4
+"153";"Starost 65+";"Osnovnošolska ali manj";"Moški";2012;29,1
+"154";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2012;41,7
+"155";"Starost 65+";"Srednješolska poklicna";"Moški";2012;14,6
+"156";"Starost 65+";"Srednješolska poklicna";"Ženske";2012;22,8
+"157";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2012;4
+"158";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2012;8,8
+"159";"Starost 65+";"Višješolska, visokošolska";"Moški";2012;2,7
+"160";"Starost 65+";"Višješolska, visokošolska";"Ženske";2012;1,5
+"161";"Starost 16+";"Osnovnošolska ali manj";"Moški";2013;24
+"162";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2013;32,2
+"163";"Starost 16+";"Srednješolska poklicna";"Moški";2013;15,5
+"164";"Starost 16+";"Srednješolska poklicna";"Ženske";2013;18,8
+"165";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2013;10,7
+"166";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2013;11
+"167";"Starost 16+";"Višješolska, visokošolska";"Moški";2013;4,2
+"168";"Starost 16+";"Višješolska, visokošolska";"Ženske";2013;4,1
+"169";"Starost 18+";"Osnovnošolska ali manj";"Moški";2013;25,9
+"170";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2013;33,9
+"171";"Starost 18+";"Srednješolska poklicna";"Moški";2013;15,5
+"172";"Starost 18+";"Srednješolska poklicna";"Ženske";2013;18,8
+"173";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2013;10,7
+"174";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2013;11
+"175";"Starost 18+";"Višješolska, visokošolska";"Moški";2013;4,2
+"176";"Starost 18+";"Višješolska, visokošolska";"Ženske";2013;4,1
+"177";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2013;24,5
+"178";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2013;24,9
+"179";"Starost 18-64";"Srednješolska poklicna";"Moški";2013;15,2
+"180";"Starost 18-64";"Srednješolska poklicna";"Ženske";2013;17,2
+"181";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2013;11,5
+"182";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2013;11,8
+"183";"Starost 18-64";"Višješolska, visokošolska";"Moški";2013;4,4
+"184";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2013;4,6
+"185";"Starost 65+";"Osnovnošolska ali manj";"Moški";2013;31,8
+"186";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2013;45,2
+"187";"Starost 65+";"Srednješolska poklicna";"Moški";2013;17,1
+"188";"Starost 65+";"Srednješolska poklicna";"Ženske";2013;24,7
+"189";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2013;4,4
+"190";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2013;7
+"191";"Starost 65+";"Višješolska, visokošolska";"Moški";2013;3,5
+"192";"Starost 65+";"Višješolska, visokošolska";"Ženske";2013;0,7
+"193";"Starost 16+";"Osnovnošolska ali manj";"Moški";2014;23,5
+"194";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2014;29,1
+"195";"Starost 16+";"Srednješolska poklicna";"Moški";2014;16,6
+"196";"Starost 16+";"Srednješolska poklicna";"Ženske";2014;19,8
+"197";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2014;10,8
+"198";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2014;11,2
+"199";"Starost 16+";"Višješolska, visokošolska";"Moški";2014;4,3
+"200";"Starost 16+";"Višješolska, visokošolska";"Ženske";2014;5,4
+"201";"Starost 18+";"Osnovnošolska ali manj";"Moški";2014;25,1
+"202";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2014;30,2
+"203";"Starost 18+";"Srednješolska poklicna";"Moški";2014;16,5
+"204";"Starost 18+";"Srednješolska poklicna";"Ženske";2014;19,8
+"205";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2014;10,8
+"206";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2014;11,2
+"207";"Starost 18+";"Višješolska, visokošolska";"Moški";2014;4,3
+"208";"Starost 18+";"Višješolska, visokošolska";"Ženske";2014;5,4
+"209";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2014;24,9
+"210";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2014;23,9
+"211";"Starost 18-64";"Srednješolska poklicna";"Moški";2014;17,3
+"212";"Starost 18-64";"Srednješolska poklicna";"Ženske";2014;20,2
+"213";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2014;11,4
+"214";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2014;12,3
+"215";"Starost 18-64";"Višješolska, visokošolska";"Moški";2014;5,1
+"216";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2014;6
+"217";"Starost 65+";"Osnovnošolska ali manj";"Moški";2014;25,9
+"218";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2014;38,3
+"219";"Starost 65+";"Srednješolska poklicna";"Moški";2014;13,5
+"220";"Starost 65+";"Srednješolska poklicna";"Ženske";2014;18,8
+"221";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2014;5,4
+"222";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2014;4,7
+"223";"Starost 65+";"Višješolska, visokošolska";"Moški";2014;0,9
+"224";"Starost 65+";"Višješolska, visokošolska";"Ženske";2014;1,5
+"225";"Starost 16+";"Osnovnošolska ali manj";"Moški";2015;23,6
+"226";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2015;31,5
+"227";"Starost 16+";"Srednješolska poklicna";"Moški";2015;15,8
+"228";"Starost 16+";"Srednješolska poklicna";"Ženske";2015;20,3
+"229";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2015;9,9
+"230";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2015;10,4
+"231";"Starost 16+";"Višješolska, visokošolska";"Moški";2015;4,8
+"232";"Starost 16+";"Višješolska, visokošolska";"Ženske";2015;6,5
+"233";"Starost 18+";"Osnovnošolska ali manj";"Moški";2015;25,3
+"234";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2015;33
+"235";"Starost 18+";"Srednješolska poklicna";"Moški";2015;15,8
+"236";"Starost 18+";"Srednješolska poklicna";"Ženske";2015;20,3
+"237";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2015;9,9
+"238";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2015;10,4
+"239";"Starost 18+";"Višješolska, visokošolska";"Moški";2015;4,8
+"240";"Starost 18+";"Višješolska, visokošolska";"Ženske";2015;6,5
+"241";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2015;24,8
+"242";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2015;26,5
+"243";"Starost 18-64";"Srednješolska poklicna";"Moški";2015;16,6
+"244";"Starost 18-64";"Srednješolska poklicna";"Ženske";2015;21,8
+"245";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2015;10,6
+"246";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2015;11,4
+"247";"Starost 18-64";"Višješolska, visokošolska";"Moški";2015;5,7
+"248";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2015;7,1
+"249";"Starost 65+";"Osnovnošolska ali manj";"Moški";2015;26,9
+"250";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2015;40,1
+"251";"Starost 65+";"Srednješolska poklicna";"Moški";2015;12,5
+"252";"Starost 65+";"Srednješolska poklicna";"Ženske";2015;15,9
+"253";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2015;5,2
+"254";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2015;4,9
+"255";"Starost 65+";"Višješolska, visokošolska";"Moški";2015;1,7
+"256";"Starost 65+";"Višješolska, visokošolska";"Ženske";2015;2,5
+"257";"Starost 16+";"Osnovnošolska ali manj";"Moški";2016;24
+"258";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2016;31,7
+"259";"Starost 16+";"Srednješolska poklicna";"Moški";2016;17,3
+"260";"Starost 16+";"Srednješolska poklicna";"Ženske";2016;20,1
+"261";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2016;9,5
+"262";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2016;10,3
+"263";"Starost 16+";"Višješolska, visokošolska";"Moški";2016;3,6
+"264";"Starost 16+";"Višješolska, visokošolska";"Ženske";2016;6,3
+"265";"Starost 18+";"Osnovnošolska ali manj";"Moški";2016;25,6
+"266";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2016;33
+"267";"Starost 18+";"Srednješolska poklicna";"Moški";2016;17,3
+"268";"Starost 18+";"Srednješolska poklicna";"Ženske";2016;20,2
+"269";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2016;9,5
+"270";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2016;10,3
+"271";"Starost 18+";"Višješolska, visokošolska";"Moški";2016;3,6
+"272";"Starost 18+";"Višješolska, visokošolska";"Ženske";2016;6,3
+"273";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2016;25,6
+"274";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2016;27
+"275";"Starost 18-64";"Srednješolska poklicna";"Moški";2016;17,9
+"276";"Starost 18-64";"Srednješolska poklicna";"Ženske";2016;20,4
+"277";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2016;10,3
+"278";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2016;10,9
+"279";"Starost 18-64";"Višješolska, visokošolska";"Moški";2016;4,2
+"280";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2016;7,1
+"281";"Starost 65+";"Osnovnošolska ali manj";"Moški";2016;25,5
+"282";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2016;39,5
+"283";"Starost 65+";"Srednješolska poklicna";"Moški";2016;14,7
+"284";"Starost 65+";"Srednješolska poklicna";"Ženske";2016;19,6
+"285";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2016;4,6
+"286";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2016;6,9
+"287";"Starost 65+";"Višješolska, visokošolska";"Moški";2016;1,2
+"288";"Starost 65+";"Višješolska, visokošolska";"Ženske";2016;1,1
+"289";"Starost 16+";"Osnovnošolska ali manj";"Moški";2017;19,5
+"290";"Starost 16+";"Osnovnošolska ali manj";"Ženske";2017;29,4
+"291";"Starost 16+";"Srednješolska poklicna";"Moški";2017;15,5
+"292";"Starost 16+";"Srednješolska poklicna";"Ženske";2017;18,5
+"293";"Starost 16+";"Srednješolska strokovna, splošna";"Moški";2017;9,5
+"294";"Starost 16+";"Srednješolska strokovna, splošna";"Ženske";2017;9,8
+"295";"Starost 16+";"Višješolska, visokošolska";"Moški";2017;4,6
+"296";"Starost 16+";"Višješolska, visokošolska";"Ženske";2017;6,1
+"297";"Starost 18+";"Osnovnošolska ali manj";"Moški";2017;21,2
+"298";"Starost 18+";"Osnovnošolska ali manj";"Ženske";2017;31,1
+"299";"Starost 18+";"Srednješolska poklicna";"Moški";2017;15,5
+"300";"Starost 18+";"Srednješolska poklicna";"Ženske";2017;18,5
+"301";"Starost 18+";"Srednješolska strokovna, splošna";"Moški";2017;9,5
+"302";"Starost 18+";"Srednješolska strokovna, splošna";"Ženske";2017;9,8
+"303";"Starost 18+";"Višješolska, visokošolska";"Moški";2017;4,6
+"304";"Starost 18+";"Višješolska, visokošolska";"Ženske";2017;6,1
+"305";"Starost 18-64";"Osnovnošolska ali manj";"Moški";2017;19,9
+"306";"Starost 18-64";"Osnovnošolska ali manj";"Ženske";2017;26,8
+"307";"Starost 18-64";"Srednješolska poklicna";"Moški";2017;16,2
+"308";"Starost 18-64";"Srednješolska poklicna";"Ženske";2017;17,8
+"309";"Starost 18-64";"Srednješolska strokovna, splošna";"Moški";2017;10,5
+"310";"Starost 18-64";"Srednješolska strokovna, splošna";"Ženske";2017;10,7
+"311";"Starost 18-64";"Višješolska, visokošolska";"Moški";2017;5
+"312";"Starost 18-64";"Višješolska, visokošolska";"Ženske";2017;6,8
+"313";"Starost 65+";"Osnovnošolska ali manj";"Moški";2017;24,8
+"314";"Starost 65+";"Osnovnošolska ali manj";"Ženske";2017;35,6
+"315";"Starost 65+";"Srednješolska poklicna";"Moški";2017;12,5
+"316";"Starost 65+";"Srednješolska poklicna";"Ženske";2017;20,5
+"317";"Starost 65+";"Srednješolska strokovna, splošna";"Moški";2017;3,2
+"318";"Starost 65+";"Srednješolska strokovna, splošna";"Ženske";2017;5,5
+"319";"Starost 65+";"Višješolska, visokošolska";"Moški";2017;2,9
+"320";"Starost 65+";"Višješolska, visokošolska";"Ženske";2017;2
