@@ -166,14 +166,28 @@ zemljevid.2017.regije$labels$fill <- 'Stopnja tveganja revščine'
 #========================================================================================================
 #========================================================================================================
 
-prag.enoclansko <- prag1[seq(1, nrow(prag1), 3), ]
-prag.enoclansko <- prag.enoclansko[c(-1)]
+graf.prag.tveganja <- ggplot((data=prag1), aes(x=Leto, y=Dohodek, col=Tip)) + 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ 
+  labs(title='Prag tveganja revščine')
 
 
-prag.dvoclansko <- prag1[seq(2, nrow(prag1), 3), ]
-prag.dvoclansko <- prag.dvoclansko[c(-1)]
+#IZOBRAZBA
+#========================================================================================================
+#========================================================================================================
 
-prag.stiriclansko <- prag1[seq(3, nrow(prag1), 3), ]
-prag.stiriclansko <- prag.stiriclansko[c(-1)]
+izobrazba.16 <- filter(izobrazba1, Starost == 'Starost 16+')
+izobrazba.16 <- izobrazba.16[c(-1)]
 
+izobrazba.16.m <- filter(izobrazba.16, Spol == 'Moški')
+izobrazba.16.m <- izobrazba.16.m[c(-2)]
 
+graf.prag.tveganja.izobrazba.m <- ggplot((data=izobrazba.16.m), aes(x=Leto, y=Odstotki, col=Izobrazba)) + 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ 
+  labs(title='Stopnja tveganja revščine glede na izobrazbo pri moških')
+
+izobrazba.16.ž <- filter(izobrazba.16, Spol == 'Ženske')
+izobrazba.16.ž <- izobrazba.16.ž[c(-2)]
+
+graf.prag.tveganja.izobrazba.ž <- ggplot((data=izobrazba.16.ž), aes(x=Leto, y=Odstotki, col=Izobrazba)) + 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ 
+  labs(title='Stopnja tveganja revščine glede na izobrazbo pri ženskah')
