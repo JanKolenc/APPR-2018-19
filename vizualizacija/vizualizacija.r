@@ -171,6 +171,70 @@ graf.prag.tveganja <- ggplot((data=prag1), aes(x=Leto, y=Dohodek, col=Tip)) +
   labs(title='Prag tveganja revščine')
 
 
+#PRAG BREZ INFLACIJE
+#========================================================================================================
+
+prag.bi <- prag1[seq(1, nrow(prag1), 3), ]
+prag.bi <- prag.bi[c(-1)]
+
+diskont.2017 = 100/101.4 * 100/99.9 * 100/99.5 * 100/100.2 * 100/101.8 * 100/102.6 * 100/101.8 * 100/101.8 * 100/100.9 
+diskont.2016 = 100/99.9 * 100/99.5 * 100/100.2 * 100/101.8 * 100/102.6 * 100/101.8 * 100/101.8 * 100/100.9 
+diskont.2015 = 100/99.5 * 100/100.2 * 100/101.8 * 100/102.6 * 100/101.8 * 100/101.8 * 100/100.9 
+diskont.2014 = 100/100.2 * 100/101.8 * 100/102.6 * 100/101.8 * 100/101.8 * 100/100.9 
+diskont.2013 = 100/101.8 * 100/102.6 * 100/101.8 * 100/101.8 * 100/100.9
+diskont.2012 = 100/102.6 * 100/101.8 * 100/101.8 * 100/100.9 
+diskont.2011 = 100/101.8 * 100/101.8 * 100/100.9
+diskont.2010 = 100/101.8 * 100/100.9 
+diskont.2009 = 100/100.9 
+ 
+
+
+
+prag.bi$Dohodek <- gsub(7628, 7628*diskont.2017, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7396, 7396*diskont.2016, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7399, 7399*diskont.2015, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7146, 7146*diskont.2014, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7111, 7111*diskont.2013, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7273, 7273*diskont.2012, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7199, 7199*diskont.2011, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7042, 7042*diskont.2010, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(7118, 7118*diskont.2009, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(6536, 6536*diskont.2008, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(5944, 5944*diskont.2007, prag.bi$Dohodek)
+prag.bi$Dohodek <- gsub(5590, 5590*diskont.2006, prag.bi$Dohodek)
+
+#tabela spremembe praga revščine za posameznika brez upoštevanja inflacije glede na prejšne leto 
+prag.bi.spr <-prag.bi
+prag.bi.spr[1,2] <- 0
+for(i in 5:13){
+  prag.bi.spr[i,2] <- as.numeric(prag.bi[i,2])/as.numeric(prag.bi[i-1,2])
+}
+prag.bi.spr <- prag.bi.spr[c(-1,-2,-3),]
+prag.bi.spr[1,2] <- 1
+
+#tabela diskontiranih sprememb tveganja na začetno leto 2008
+diskont <- prag.bi.spr
+diskont[2,2] <- 1/as.numeric(prag.bi.spr[2,2])
+for (i in 2:10){
+  diskont[i,2] <- as.numeric(diskont[i-1,2])*1/as.numeric(prag.bi.spr[i,2])
+}
+
+diskont.vrednosti <- izobrazba.16.s
+
+for (i in 1:80){
+  for (j in 1:10){
+    if (diskont.vrednosti[i,2] == diskont[j,1]){
+      diskont.vrednosti[i,3] <- as.numeric(diskont.vrednosti[i,3])*as.numeric(diskont[j,2])
+    }
+  }
+}
+
+graf.prag.tveganja.izobrazba.brez.inflacije <- ggplot((data=diskont.vrednosti), aes(x=Leto, y=Odstotki, col=Izobrazba))+  
+  scale_y_continuous('Odstotki',breaks = seq(0,40, 2), limits = c(0, 35)) + 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))+ 
+  labs(title='Stopnja tveganja revščine glede na izobrazbo primerjava brez inflacije')
+
+
 #IZOBRAZBA
 #========================================================================================================
 #========================================================================================================
@@ -178,16 +242,52 @@ graf.prag.tveganja <- ggplot((data=prag1), aes(x=Leto, y=Dohodek, col=Tip)) +
 izobrazba.16 <- filter(izobrazba1, Starost == 'Starost 16+')
 izobrazba.16 <- izobrazba.16[c(-1)]
 
+#MOŠKI
+#========================================================================================================
 izobrazba.16.m <- filter(izobrazba.16, Spol == 'Moški')
 izobrazba.16.m <- izobrazba.16.m[c(-2)]
 
 graf.prag.tveganja.izobrazba.m <- ggplot((data=izobrazba.16.m), aes(x=Leto, y=Odstotki, col=Izobrazba)) + 
-  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))+  
+  scale_y_continuous('Odstotki',breaks = seq(0,40, 2), limits = c(0, 35))+ 
   labs(title='Stopnja tveganja revščine glede na izobrazbo pri moških')
+#========================================================================================================
 
+#ŽENSKE
+#========================================================================================================
 izobrazba.16.ž <- filter(izobrazba.16, Spol == 'Ženske')
 izobrazba.16.ž <- izobrazba.16.ž[c(-2)]
 
-graf.prag.tveganja.izobrazba.ž <- ggplot((data=izobrazba.16.ž), aes(x=Leto, y=Odstotki, col=Izobrazba)) + 
-  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ 
+graf.prag.tveganja.izobrazba.ž <- ggplot((data=izobrazba.16.ž), aes(x=Leto, y=Odstotki, col=Izobrazba))+  
+  scale_y_continuous('Odstotki',breaks = seq(0,40, 2), limits = c(0, 35)) + 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))+ 
   labs(title='Stopnja tveganja revščine glede na izobrazbo pri ženskah')
+#========================================================================================================
+
+#PRIMERJAVA
+#========================================================================================================
+
+izobrazba.16.m.s <- izobrazba.16.m
+izobrazba.16.ž.s <- izobrazba.16.ž
+
+izobrazba.16.m.s$Izobrazba <- gsub('Osnovnošolska ali manj', 'Osnovnošolska ali manj moški', izobrazba.16.m.s$Izobrazba)
+izobrazba.16.m.s$Izobrazba <- gsub('Srednješolska poklicna', 'Srednješolska poklicna moški', izobrazba.16.m.s$Izobrazba)
+izobrazba.16.m.s$Izobrazba <- gsub('Srednješolska strokovna, splošna', 'Srednješolska strokovna, splošna moški', izobrazba.16.m.s$Izobrazba)
+izobrazba.16.m.s$Izobrazba <- gsub('Višješolska, visokošolska', 'Višješolska, visokošolska moški', izobrazba.16.m.s$Izobrazba)
+
+izobrazba.16.ž.s$Izobrazba <- gsub('Osnovnošolska ali manj', 'Osnovnošolska ali manj ženske', izobrazba.16.ž.s$Izobrazba)
+izobrazba.16.ž.s$Izobrazba <- gsub('Srednješolska poklicna', 'Srednješolska poklicna ženske', izobrazba.16.ž.s$Izobrazba)
+izobrazba.16.ž.s$Izobrazba <- gsub('Srednješolska strokovna, splošna', 'Srednješolska strokovna, splošna ženske', izobrazba.16.ž.s$Izobrazba)
+izobrazba.16.ž.s$Izobrazba <- gsub('Višješolska, visokošolska', 'Višješolska, visokošolska ženske', izobrazba.16.ž.s$Izobrazba)
+
+
+izobrazba.16.s <- rbind(izobrazba.16.m.s,izobrazba.16.ž.s)
+
+
+graf.prag.tveganja.izobrazba.s <- ggplot((data=izobrazba.16.s), aes(x=Leto, y=Odstotki, col=Izobrazba))+  
+  scale_y_continuous('Odstotki',breaks = seq(0,40, 2), limits = c(0, 35)) + 
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))+ 
+  labs(title='Stopnja tveganja revščine glede na izobrazbo primerjava')
+#========================================================================================================
+
+
