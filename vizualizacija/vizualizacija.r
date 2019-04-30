@@ -58,101 +58,101 @@ regije.2017 <- regije.2017[c(-2)]
 zemljevid.2008.regije <- ggplot() +
   geom_polygon(data=right_join(regije.2008, Slovenija, by=c('Regija')),
                aes(x=long, y=lat, group=group, fill=Odstotki))+
-  xlab("") + ylab("") + ggtitle('Brezposelnost v letu 2007') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2007') + 
   theme(axis.title=element_blank(), axis.text=element_blank(),
         axis.ticks=element_blank(), panel.background=element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000',
-                      name='Stopnja registrirane brezposelnosti')
+                      name='Stopnja tveganja revščine')
 
 #========================================================================================================
 
 zemljevid.2009.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2009,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill=Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2009') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2009') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2009.regije$labels$fill <- 'Regije 2009'
+zemljevid.2009.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2010.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2010,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2010') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2010') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2010.regije$labels$fill <- 'Regije 2010'
+zemljevid.2010.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2011.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2011,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2011') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2011') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2011.regije$labels$fill <- 'Regije 2011'
+zemljevid.2011.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2012.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2012,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2012') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2012') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2012.regije$labels$fill <- 'Regije 2012'
+zemljevid.2012.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2013.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2013,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2013') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2013') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2013.regije$labels$fill <- 'Regije 2013'
+zemljevid.2013.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2014.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2014,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2014') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2014') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2014.regije$labels$fill <- 'Regije 2014'
+zemljevid.2014.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2015.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2015,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2015') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2015') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2015.regije$labels$fill <- 'Regije 2015'
+zemljevid.2015.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2016.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2016,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2016') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2016') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2016.regije$labels$fill <- 'Regije 2016'
+zemljevid.2016.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
 zemljevid.2017.regije <- ggplot() +
   geom_polygon(data = right_join(regije.2017,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-  xlab("") + ylab("") + ggtitle('Regije 2017') + 
+  xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo 2017') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
   scale_fill_gradient(low = '#ffb3b3', high='#660000')
-zemljevid.2017.regije$labels$fill <- 'Regije 2017'
+zemljevid.2017.regije$labels$fill <- 'Stopnja tveganja revščine'
 
 #========================================================================================================
 
