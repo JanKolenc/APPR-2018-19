@@ -30,9 +30,9 @@ izobrazba1$Leto <- as.character(izobrazba1$Leto) %>% parse_number()
 #========================================================================================================
 
 prag1 <- read_delim("podatki/prag.csv", ";", na="-", locale=sl,
-                    col_names=c("Stopnja1","Stopnja","Regija",2005:2017)) %>%
+                    col_names=c("Stopnja1","Stopnja","Tip gospodinjstva",2005:2017)) %>%
   select(-1) %>% melt(id.vars=1:2, variable.name="Leto",
-                      value.name="Odstotki", na.rm=TRUE) 
+                      value.name="Letni dohodek gospodinjstva", na.rm=TRUE) 
 prag1$Leto <- as.character(prag1$Leto) %>% parse_number()
 prag1 <- prag1[,-1]
 
