@@ -1,0 +1,42 @@
+"Prebivalstvo po: SPOL, STAROST, STATISTIÈNA REGIJA, LETO , IZOBRAZBA"
+
+" ";" ";" ";"2011";" ";" ";" ";"2012";" ";" ";" ";"2013";" ";" ";" ";"2014";" ";" ";" ";"2015";" ";" ";" ";"2016";" ";" ";" ";"2017";" ";" ";" ";"2018";" ";" ";" "
+" ";" ";" ";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj";"Osnovnošolska ali manj - Skupaj";"Nižja poklicna, srednja poklicna";"Srednja strokovna, srednja splošna";"Višješolska, visokošolska - Skupaj"
+"Spol - SKUPAJ"
+" ";"Starost - SKUPAJ"
+" ";" ";"Pomurska";39590;23967;27240;12672;38303;23915;27491;13750;36914;23806;27785;14074;35806;23719;27375;14835;34654;23825;27455;15363;33587;23713;27528;15956;32490;23526;27396;16816;31455;23443;27520;17074
+" ";" ";"Podravska";79916;68571;88659;43856;76818;68125;88810;47576;74197;67685;89457;49303;72068;67374;88516;52500;69734;67116;88828;54291;67160;66777;88926;56060;65146;66274;88084;58578;63227;66211;88434;59872
+" ";" ";"Koroška";19157;17331;16994;8713;18433;17206;17063;9360;17984;17071;17159;9589;17557;16946;16756;10101;17003;16861;16802;10468;16564;16757;16787;10836;15989;16690;16639;11307;15478;16589;16814;11519
+" ";" ";"Savinjska";69680;57538;61712;33047;67100;57294;61946;35872;65245;57198;62396;36931;63844;57122;61040;39148;60609;55637;59705;39884;58936;55519;59960;41505;57289;55662;59601;43677;55754;55669;60058;44703
+" ";" ";"Zasavska";12503;9667;11155;5222;11949;9500;11197;5574;11587;9363;11170;5716;11296;9180;10921;5964;14678;11872;14811;8346;14167;11844;14784;8629;13657;11809;14718;9038;13203;11745;14752;9228
+" ";" ";"Posavska";19813;15681;16627;8288;19036;15621;16664;8998;18561;15618;16850;9266;18069;15556;16508;9812;19016;16637;18075;11026;18420;16713;18176;11424;17845;16586;18081;12023;17382;16452;18211;12253
+" ";" ";"Jugovzhodna Slovenija";40665;29833;32504;18130;39148;29498;32727;19681;37742;29422;33283;20206;36811;29317;32756;21424;35631;29209;32903;22314;34619;29099;33027;23318;33794;29038;32832;24410;32934;28857;33116;25037
+" ";" ";"Osrednjeslovenska";109196;87334;152504;104791;105099;85459;152562;112265;102943;85008;154300;116512;101271;84236;153243;123150;95458;80987;148735;125686;93226;80976;148018;130185;90977;81022;145427;136602;88872;80918;145891;140030
+
+"Vir: Statistièni urad Republike Slovenije. "
+
+"Povezane vsebine:- (seznam "
+"HREF=http://www.stat.si/StatWeb/Common/PrikaziDokument.ashx?IdDatotek-"
+"e=7785 target=_blank) Metodološka pojasnila"
+
+"Podatki so teritorialno razvršèeni po uredbi o Standardni "
+"klasifikaciji teritorialnih enot ((seznam "
+"HREF=../database/Meta/Klas/SKTE.htm TARGET=_blank) opis in "
+"pojasnila), raven SKTE 3. "
+"Opombe o spremembah posameznih regij so zapisane k vsaki spremenjeni "
+"regiji in so ob izpisu tabele na zaslon dostopne s klikom na ikono za "
+"opombe (zvezdica). V opombah je na zaèetku naveden datum, s katerim "
+"je opisana teritorialna sprememba upoštevana pri teritorialnem "
+"razvršèanju enot za statistiène namene. "
+" "
+
+"Stanje na 1. 1."
+
+"Podatke o izobrazbi za stanje 1. 1. 2011 smo v Sloveniji pripravili "
+"tudi v skladu z Uredbo (ES) št. 763/2008 Evropskega parlamenta in "
+"Sveta z dne 9. julija 2008 o popisih prebivalstva in stanovanj "
+"(Uradni list Evropske unije L 218/14, 13. avgust 2008)."
+
+"- (seznam HREF=http://www.stat.si/klasius/Default.aspx?id=2  "
+"target=_blank) KLASIUS-SRV "
+
