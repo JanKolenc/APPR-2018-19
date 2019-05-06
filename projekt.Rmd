@@ -1,5 +1,5 @@
 ---
-title: "Poročilo pri predmetu Analiza podatkov s programom R"
+title: "Revščina v Sloveniji"
 author: "Jan Kolenc"
 output:
   html_document: default
@@ -23,9 +23,9 @@ source('lib/rstudio.r', encoding='UTF-8')
 ```
 
 
-# Izbira teme
+# Uvodna beseda
 
-Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom kakšno je tveganje po statističnih regijah in kako na tveganje upliva stopnja izobrazbe starost in velikost družine.
+Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom kakšno je tveganje po statističnih regijah skozi čas in kako na tveganje vpliva stopnja izobrazbe, starost in velikost družine. Primerjal bom spola in prikazal podobnosti ter razlike.
 
 # Obdelava, uvoz in čiščenje podatkov
 
@@ -59,19 +59,48 @@ PRAG TVEGANJA REVŠČINE je opredeljen s 60 % mediane ekvivalentnega neto razpol
 Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 let ali več, pa utež 0,5. Štiričlansko gospodinjstvo dveh odraslih in dveh otrok ima tako 2,1 ekvivalentnega odraslega člana (izračun: 1x1+1x0,5+2x0,3=2,1), dvočlansko gospodinjstvo dveh odraslih oseb pa 1,5 ekvivalentnega člana (izračun: 1x1+1x0,5=1,5). 
 EKVIVALENTNI DOHODEK (dohodek na ekvivalentnega odraslega člana gospodinjstva) se izračuna tako, da se sešteje dohodke vseh članov gospodinjstva in nato deli s številom ekvivalentnih odraslih članov v gospodinjstvu.
 
-##Analiza in vizualizacija
+#Analiza in vizualizacija
+###Prag tveganja revščine
 ```{r vizualizacija, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, results='hide'}
 source("vizualizacija/vizualizacija.r", encoding='UTF-8')
 ```
 
-```{r shiny, echo=FALSE}
+
+```{r graf.prag.tveganja, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
+plot(graf.prag.tveganja)
+```
+
+Iz grafa lahko razberemo, da je prag tveganja lepo rastel vse do gospodarske krize leta 2008 takrat je celo malce padel potem pa vse do danes stagniral z manjšimi spremembami.
+
+###Stopnja tveganja po regijah
+```{r shiny, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
 shinyAppDir("shiny", options=list(width="100%", height=600))
 ```
 
-#Povezava med brezposelnostjo in odstotkom ljudi ki živijo pod pragom revščine po regijah
+Z zgornjih zemljevidov lahko spremljamo spremembe stopnje tveganja revščine po statističnih regijah. Opazimo da se je najbolj stanje izboljšalo v Severo-Vzhodnem delu države najbolj vidno v pomurski regiji.V južni in jugo-vzhodni sloveniji je skozi čas stopnja tveganja stagnirala stanje pa se je poslabšalo predvsem na gorenjskem.
 
 
-```{r graf.prag, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.cap='Napoved brezposelnosti'}
+###Primerjava spolov
+```{r graf.prag.tveganja.izobrazba.s, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
+plot(graf.prag.tveganja.izobrazba.s)
+```
+
+Z zgornjega grafa razberemo, da so ženske bolj naklonjene tveganju revščine neglede na izobrazbo. Izjema so bile ženske z visokošolsko ali višješolsko izbrazbo do leta 2013. Dober znak iskanja ravnovesja med spoloma je to da se razlike v tveganju skozi leta vedno manjše.
+
+###Stopnja tveganja revščine in stopnja registrirane brezposelnosti
+```{r graf.prag, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
 graf.prag
 ```
+
+Zgornji graf primerja stopnjo registrirane brezposelnosti in stopnjo tveganja revščine skozi leta po statističnih regijah.
+Kot smo ugotovili že pri zemljevidu se je stnje glede stopnje tveganja revščine najbolj izboljšala v pomurski regiji ampak se je ravno tam zvišala stopnja registrirane brezposelnosti. Iz tega bi lahko sklepal da so v tem delu zaprli mnogo delovnih mest z nižjimi plačami in odprli manj delovnih mest z višjimi plačami. Če se osredotočimo še na osrednjo Slovenijo vidimo da se je po krizi pa vse do leta 2014 stanje glede brezposelnosti in sopnje tveganja revščine slabšalo. Po letu 2014 se opazi izboljšanje glede stopnje brezposelnosti kasneje pa tudi glede stopnje tveganja brezposelnosti. Stanje pa se še ni povrnilo do takega nivoja kot je bil pred krizo.
+
+#Zaključna beseda
+
+Ugotovil sem da se po šoku zaradi krize stopnja tveganja revščine ponovno zmanjšuje kar povečuje blaginjo naše države. Izravnavajo se tudi razlike med spoloma na tem področju ki so bile v preteklosti občutno večje. Pravtako se izravnavajo razlike med regijami.
+
+
+
+
+
 

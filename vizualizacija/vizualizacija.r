@@ -168,7 +168,7 @@ graf.slovenija.zemljevid <- ggplot(Slovenija, aes(x=long, y=lat, fill=Regija)) +
 
 graf.prag.tveganja <- ggplot((data=prag1), aes(x=Leto, y=Dohodek, col=Tip)) + 
   geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ 
-  labs(title='Prag tveganja revščine')
+  labs(title='Prag tveganja revščine')+ theme(legend.position = "top")
 
 
 
