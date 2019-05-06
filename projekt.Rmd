@@ -21,7 +21,9 @@ Sys.setlocale('LC_ALL', 'Slovenian')
 ```{r studio, echo=FALSE, results='asis'}
 source('lib/rstudio.r', encoding='UTF-8')
 ```
-
+<center>
+![](slike/slika.jpg)
+</center>
 
 # Uvodna beseda
 

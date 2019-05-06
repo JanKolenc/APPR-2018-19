@@ -28,7 +28,6 @@ Slovenija$Regija <- gsub('Obalno-kraÅ¡ka', 'Obalno-kraška', Slovenija$Regija)
 
 graf.slovenija.zemljevid <- ggplot(Slovenija, aes(x=long, y=lat, fill=Regija)) +
   geom_polygon(show.legend = TRUE, inherit.aes = TRUE) +
-  labs(title="Slovenija po regijah")+
   theme_classic()
 
 
@@ -167,8 +166,7 @@ graf.slovenija.zemljevid <- ggplot(Slovenija, aes(x=long, y=lat, fill=Regija)) +
 #========================================================================================================
 
 graf.prag.tveganja <- ggplot((data=prag1), aes(x=Leto, y=Dohodek, col=Tip)) + 
-  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ 
-  labs(title='Prag tveganja revščine')+ theme(legend.position = "top")
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2005, 2017, 1), limits = c(2005, 2017))+ theme(legend.position = "top")
 
 
 
@@ -223,8 +221,7 @@ izobrazba.16.s <- rbind(izobrazba.16.m.s,izobrazba.16.ž.s)
 
 graf.prag.tveganja.izobrazba.s <- ggplot((data=izobrazba.16.s), aes(x=Leto, y=Odstotki, col=Izobrazba))+  
   scale_y_continuous('Odstotki',breaks = seq(0,40, 2), limits = c(0, 35)) + 
-  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))+ 
-  labs(title='Stopnja tveganja revščine glede na izobrazbo primerjava')
+  geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))
 #========================================================================================================
 
 # #PRAG BREZ INFLACIJE
@@ -307,8 +304,7 @@ zemljevid.leto <- function(cifra) {
   regije2 <- regije1 %>% filter(Leto==cifra)
   ggplot() + geom_polygon(data = right_join(regije2,Slovenija, by = c('Regija')),
                           aes(x = long, y = lat, group = group, fill= Odstotki))+
-    xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo skozi leta ') + 
-    theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
+    xlab("") + ylab("")  + theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
     scale_fill_gradient(low = '#ffb3b3', high='#660000',limits = c(7,22))
   
 }
