@@ -37,12 +37,6 @@ prag1$Leto <- as.character(prag1$Leto) %>% parse_number()
 prag1 <- prag1[,-1]
 
 #========================================================================================================
-#========================================================================================================
-izobrazba.po.regijah <- read_delim("podatki/izobrazba.po.regijah.csv", ";", na="-")
-izobrazba.po.regijah <- izobrazba.po.regijah[,-1][,-1][-2,][-2,]
-colnames(izobrazba.po.regijah) <- c("Regije",rep("2011",4),rep("2012",4),rep("2013",4),rep("2014",4),rep("2015",4),rep("2016",4),rep("2017",4),rep("2018",4))
-#==================================================================================
-
 
 #========================================================================================================
 #========================================================================================================
@@ -51,7 +45,8 @@ colnames(izobrazba.po.regijah) <- c("Regije",rep("2011",4),rep("2012",4),rep("20
 write.csv2(regije1,'podatki/tidy_regije.csv', fileEncoding = 'UTF-8')
 write.csv2(izobrazba1,'podatki/tidy_izobrazba.csv', fileEncoding = 'UTF-8')
 write.csv2(prag1,'podatki/tidy_prag.csv', fileEncoding = 'UTF-8')
-
+brezposelnost <- read_csv2("podatki/tidy_delovno_aktivno_prebivalstvo.csv")
+brezposelnost <- brezposelnost[,-1][,-3][,-3]
 #========================================================================================================
 #========================================================================================================
 

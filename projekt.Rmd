@@ -7,22 +7,21 @@ output:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+runtime: shiny
 
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-# Če želimo nastaviti pisave v PDF-ju, odkomentiramo
-# in sledimo navodilom v programu.
-#source("fontconfig.r", encoding="UTF-8")
-
-# Uvoz vseh potrebnih knjižnic
-source("lib/libraries.r", encoding="UTF-8")
+source('lib/libraries.r', encoding='UTF-8')
+Sys.setlocale('LC_ALL', 'Slovenian')
 ```
 
-```{r rstudio, echo=FALSE, results='asis'}
-# Izris povezave do RStudia na Binderju
-source("lib/rstudio.r", encoding="UTF-8")
+
+
+```{r studio, echo=FALSE, results='asis'}
+source('lib/rstudio.r', encoding='UTF-8')
 ```
+
 
 # Izbira teme
 
@@ -33,6 +32,7 @@ Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom kakš
 ```{r uvoz, echo=FALSE, message=FALSE, warning=FALSE}
 source("uvoz/uvoz.r", encoding="UTF-8")
 ```
+
 
 Uvozil sem podatke o revščini v obliki CSV s statističnega urada. 
 Podatke imam v 3 razpredelnicah v obliki *tidy data* ki sem jih dejansko razbil na 34 razpredelnic po letih.
@@ -58,3 +58,20 @@ kable(head(prag1))
 PRAG TVEGANJA REVŠČINE je opredeljen s 60 % mediane ekvivalentnega neto razpoložljivega dohodka vseh gospodinjstev ob upoštevanju OECD-jeve prilagojene ekvivalenčne lestvice.
 Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 let ali več, pa utež 0,5. Štiričlansko gospodinjstvo dveh odraslih in dveh otrok ima tako 2,1 ekvivalentnega odraslega člana (izračun: 1x1+1x0,5+2x0,3=2,1), dvočlansko gospodinjstvo dveh odraslih oseb pa 1,5 ekvivalentnega člana (izračun: 1x1+1x0,5=1,5). 
 EKVIVALENTNI DOHODEK (dohodek na ekvivalentnega odraslega člana gospodinjstva) se izračuna tako, da se sešteje dohodke vseh članov gospodinjstva in nato deli s številom ekvivalentnih odraslih članov v gospodinjstvu.
+
+##Analiza in vizualizacija
+```{r vizualizacija, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, results='hide'}
+source("vizualizacija/vizualizacija.r", encoding='UTF-8')
+```
+
+```{r shiny, echo=FALSE}
+shinyAppDir("shiny", options=list(width="100%", height=600))
+```
+
+#Povezava med brezposelnostjo in odstotkom ljudi ki živijo pod pragom revščine po regijah
+
+
+```{r graf.prag, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.cap='Napoved brezposelnosti'}
+graf.prag
+```
+
