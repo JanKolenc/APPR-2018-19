@@ -1,11 +1,5 @@
-# 4. faza: Analiza podatkov
-
-podatki <- obcine %>% transmute(obcina, povrsina, gostota,
-                                gostota.naselij=naselja/povrsina) %>%
-  left_join(povprecja, by="obcina")
-row.names(podatki) <- podatki$obcina
-podatki$obcina <- NULL
-
-# Število skupin
-n <- 5
-skupine <- hclust(dist(scale(podatki))) %>% cutree(n)
+zemljevid.leto <- function(cifra) {
+  ggplot(tabela_gostota %>% filter(leto==cifra), aes(x=regija, y=gostota)) + 
+    ylim(0, 250) + geom_bar(stat = "identity", fill = "springgreen3") +
+    ggtitle("") + xlab("") + ylab("št. prebivlacev/km^2")
+}
