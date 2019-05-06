@@ -161,7 +161,7 @@ zemljevid.leto <- function(cifra) {
   regije2 <- regije1 %>% filter(Leto==cifra)
   ggplot() + geom_polygon(data = right_join(regije2,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill= Odstotki))+
-    xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo skozi leta') + 
+    xlab("") + ylab("") + ggtitle('Stopnja tveganja revščine glede na statistično regijo skozi leta ') + 
     theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
     scale_fill_gradient(low = '#ffb3b3', high='#660000',limits = c(7,22))
  
@@ -299,7 +299,13 @@ graf.prag.tveganja.izobrazba.brez.inflacije <- ggplot((data=diskont.vrednosti), 
   geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))+ 
   labs(title='Stopnja tveganja revščine glede na izobrazbo primerjava brez inflacije')
 
+#PLOTLY
+#========================================================================================================
 
-
-
+plotly.tabela <- left_join(brezposelnost,regije1,by = c('Regija','Leto')) 
+plotly.tabela <- plotly.tabela%>% filter(Odstotki != '')
+graf.prag <- ggplot(data = plotly.tabela, aes(x=Odstotki, y=Stopnja.registrirane.brezposelnosti, color=Regija)) + geom_point(aes(frame=Leto, ids=Regija)) + scale_x_continous()
+graf.prag <- graf.prag + xlab('Odstotek ljudi ki živijo pod pragom revščine') + ylab('Registrirana stopnja brezposelnosti')
+graf.prag <- ggplotly(graf.prag)
+#print(graf.prag)
 
