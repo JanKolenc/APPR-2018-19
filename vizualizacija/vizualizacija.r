@@ -185,10 +185,10 @@ graf.prag.tveganja.izobrazba.m <- ggplot((data=izobrazba.16.m), aes(x=Leto, y=Od
 
 #ŽENSKE
 #========================================================================================================
-izobrazba.16.ž <- filter(izobrazba.16, Spol == 'Ženske')
-izobrazba.16.ž <- izobrazba.16.ž[c(-2)]
+izobrazba.16.z <- filter(izobrazba.16, Spol == 'Ženske')
+izobrazba.16.z <- izobrazba.16.z[c(-2)]
 
-graf.prag.tveganja.izobrazba.ž <- ggplot((data=izobrazba.16.ž), aes(x=Leto, y=Odstotki, col=Izobrazba))+  
+graf.prag.tveganja.izobrazba.ž <- ggplot((data=izobrazba.16.z), aes(x=Leto, y=Odstotki, col=Izobrazba))+  
   scale_y_continuous('Odstotki',breaks = seq(0,40, 2), limits = c(0, 35)) + 
   geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))+ 
   labs(title='Stopnja tveganja revščine glede na izobrazbo pri ženskah')
@@ -198,20 +198,20 @@ graf.prag.tveganja.izobrazba.ž <- ggplot((data=izobrazba.16.ž), aes(x=Leto, y=
 #========================================================================================================
 
 izobrazba.16.m.s <- izobrazba.16.m
-izobrazba.16.ž.s <- izobrazba.16.ž
+izobrazba.16.z.s <- izobrazba.16.z
 
 izobrazba.16.m.s$Izobrazba <- gsub('Osnovnošolska ali manj', 'Osnovnošolska ali manj moški', izobrazba.16.m.s$Izobrazba)
 izobrazba.16.m.s$Izobrazba <- gsub('Srednješolska poklicna', 'Srednješolska poklicna moški', izobrazba.16.m.s$Izobrazba)
 izobrazba.16.m.s$Izobrazba <- gsub('Srednješolska strokovna, splošna', 'Srednješolska strokovna, splošna moški', izobrazba.16.m.s$Izobrazba)
 izobrazba.16.m.s$Izobrazba <- gsub('Višješolska, visokošolska', 'Višješolska, visokošolska moški', izobrazba.16.m.s$Izobrazba)
 
-izobrazba.16.ž.s$Izobrazba <- gsub('Osnovnošolska ali manj', 'Osnovnošolska ali manj ženske', izobrazba.16.ž.s$Izobrazba)
-izobrazba.16.ž.s$Izobrazba <- gsub('Srednješolska poklicna', 'Srednješolska poklicna ženske', izobrazba.16.ž.s$Izobrazba)
-izobrazba.16.ž.s$Izobrazba <- gsub('Srednješolska strokovna, splošna', 'Srednješolska strokovna, splošna ženske', izobrazba.16.ž.s$Izobrazba)
-izobrazba.16.ž.s$Izobrazba <- gsub('Višješolska, visokošolska', 'Višješolska, visokošolska ženske', izobrazba.16.ž.s$Izobrazba)
+izobrazba.16.z.s$Izobrazba <- gsub('Osnovnošolska ali manj', 'Osnovnošolska ali manj ženske', izobrazba.16.z.s$Izobrazba)
+izobrazba.16.z.s$Izobrazba <- gsub('Srednješolska poklicna', 'Srednješolska poklicna ženske', izobrazba.16.z.s$Izobrazba)
+izobrazba.16.z.s$Izobrazba <- gsub('Srednješolska strokovna, splošna', 'Srednješolska strokovna, splošna ženske', izobrazba.16.z.s$Izobrazba)
+izobrazba.16.z.s$Izobrazba <- gsub('Višješolska, visokošolska', 'Višješolska, visokošolska ženske', izobrazba.16.z.s$Izobrazba)
 
 
-izobrazba.16.s <- rbind(izobrazba.16.m.s,izobrazba.16.ž.s)
+izobrazba.16.s <- rbind(izobrazba.16.m.s,izobrazba.16.z.s)
 
 
 graf.prag.tveganja.izobrazba.s <- ggplot((data=izobrazba.16), aes(x=Leto, y=Odstotki, col=Izobrazba,shape=Spol))+  
