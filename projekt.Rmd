@@ -74,7 +74,26 @@ plot(graf.prag.tveganja)
 
 Iz grafa lahko razberemo, da je prag tveganja lepo rastel vse do gospodarske krize leta 2008 takrat je celo malce padel potem pa vse do danes stagniral z manjšimi spremembami.
 
+```{r analiza, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, results='hide'}
+source('analiza/analiza.r', encoding='UTF-8')
+```
+
+
+###Napoved praga tveganja revščine
+```{r graf.napovedi.praga, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
+plot(graf.napovedi.praga)
+```
+
+Zgoraj sem pripravil model ki prikazuje napoved za orag tveganja revščine za leta 2018-2020 kot podatke sem vzel leta 2005-2017  pričemer pa se vidi hitra rast praga tik pred krizo v letih 2005-2008 kar nam prikaže malce nerealne napovedi zato sem zanemaril prva tri leta in pripravil nov model(spodaj) ki prikazuje realnejše napovedi. 
+
+```{r graf.napovedi.praga.realne, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
+plot(graf.napovedi.praga.realne)
+```
+
 ###Stopnja tveganja po regijah
+
+
+
 ```{r shiny, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
 shinyAppDir("shiny", options=list(width="100%", height=600))
 ```

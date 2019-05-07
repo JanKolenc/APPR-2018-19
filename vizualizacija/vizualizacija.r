@@ -7,11 +7,6 @@ library(maptools)
 library(maps)
 library(plotly)
 
-source(file = 'lib/uvozi.zemljevid.r', encoding = 'UTF-8')
-source('lib/libraries.r', encoding = 'UTF-8')
-source('uvoz/uvoz.r', encoding = 'UTF-8')
-
-
 
 #ZEMLJEVIDI
 #========================================================================================================
