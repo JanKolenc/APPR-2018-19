@@ -16,10 +16,10 @@ library(plotly)
 Slovenija <- uvozi.zemljevid("http://biogeo.ucdavis.edu/data/gadm2.8/shp/SVN_adm_shp.zip",
                              "SVN_adm1") %>% fortify()
 colnames(Slovenija)[12]<-'Regija'
-Slovenija$Regija <- gsub('GoriÅ¡ka', 'Goriška', Slovenija$Regija)
-Slovenija$Regija <- gsub('KoroÅ¡ka', 'Koroška', Slovenija$Regija)
-Slovenija$Regija <- gsub('Notranjsko-kraÅ¡ka', 'Notranjsko-kraška', Slovenija$Regija)
-Slovenija$Regija <- gsub('Obalno-kraÅ¡ka', 'Obalno-kraška', Slovenija$Regija)
+# Slovenija$Regija <- gsub('GoriÅ¡ka', 'Goriška', Slovenija$Regija)
+# Slovenija$Regija <- gsub('KoroÅ¡ka', 'Koroška', Slovenija$Regija)
+# Slovenija$Regija <- gsub('Notranjsko-kraÅ¡ka', 'Notranjsko-kraška', Slovenija$Regija)
+# Slovenija$Regija <- gsub('Obalno-kraÅ¡ka', 'Obalno-kraška', Slovenija$Regija)
 
 graf.slovenija.zemljevid <- ggplot(Slovenija, aes(x=long, y=lat, fill=Regija)) +
   geom_polygon(show.legend = TRUE, inherit.aes = TRUE) +
@@ -214,9 +214,12 @@ izobrazba.16.ž.s$Izobrazba <- gsub('Višješolska, visokošolska', 'Višješols
 izobrazba.16.s <- rbind(izobrazba.16.m.s,izobrazba.16.ž.s)
 
 
-graf.prag.tveganja.izobrazba.s <- ggplot((data=izobrazba.16.s), aes(x=Leto, y=Odstotki, col=Izobrazba))+  
+graf.prag.tveganja.izobrazba.s <- ggplot((data=izobrazba.16), aes(x=Leto, y=Odstotki, col=Izobrazba,shape=Spol))+  
+  
   scale_y_continuous('Odstotki',breaks = seq(0,40, 2), limits = c(0, 35)) + 
+  
   geom_point() + geom_line() + theme_classic() +  scale_x_continuous('Leto',breaks = seq(2008, 2017, 1), limits = c(2008, 2017))
+
 #========================================================================================================
 
 # #PRAG BREZ INFLACIJE

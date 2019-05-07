@@ -13,7 +13,7 @@ graf.napovedi.praga <- ggplot(prag.n, aes(x=Leto, y=Dohodek)) + geom_point(data=
 
 prag.n.r <- prag1[seq(1, nrow(prag1), 3), ]
 prag.n.r <- prag.n.r[c(-1)]
-prag.n.r <- prag.n.r[-1,][-1,][-1,][-1,]
+prag.n.r <- prag.n.r[-c(1,2,3,4),]
 
 napoved <- lm(data=prag.n.r, Dohodek ~Leto)
 dodatna.leta <- data.frame(Leto=seq(2018,2020,1))

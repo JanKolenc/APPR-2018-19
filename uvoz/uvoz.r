@@ -46,7 +46,7 @@ write.csv2(regije1,'podatki/tidy_regije.csv', fileEncoding = 'UTF-8')
 write.csv2(izobrazba1,'podatki/tidy_izobrazba.csv', fileEncoding = 'UTF-8')
 write.csv2(prag1,'podatki/tidy_prag.csv', fileEncoding = 'UTF-8')
 brezposelnost <- read_csv2("podatki/tidy_delovno_aktivno_prebivalstvo.csv")
-brezposelnost <- brezposelnost[,-1][,-3][,-3]
+brezposelnost <- brezposelnost[,-c(1,4,5)]
 #========================================================================================================
 #========================================================================================================
 

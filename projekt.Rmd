@@ -46,7 +46,7 @@ Podatke imam v štirih razpredelnicah v obliki *tidy data*, ki sem jih dejansko 
 kable(head(izobrazba1))
 ```
 
-STOPNJA TVEGANJA REVŠČINE je odstotek oseb, ki živijo v gospodinjstvih z ekvivalentnim (neto) razpoložljivim dohodkom, nižjim od praga tveganja revščine. PRAG TVEGANJA REVŠČINE se določi (izračuna) kot 60 % mediane ekvivalentnega (neto) razpoložljivega dohodka vseh gospodinjstev. Za izračun EKVIVALENTNEGA DOHODKA (dohodka na ekvivalentnega odraslega člana gospodinjstva) se uporablja prilagojeno OECD-jevo ekvivalenčno lestvico. Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 ali več let, pa utež 0,5. [@SURS]
+
 
 ```{r regije1, echo=FALSE}
 kable(head(regije1))
