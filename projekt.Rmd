@@ -8,6 +8,7 @@ output:
       in_header: lib/styles.sty
     latex_engine: xelatex
 runtime: shiny
+bibliography: Biblio.bib
 
 ---
 
@@ -27,7 +28,7 @@ source('lib/rstudio.r', encoding='UTF-8')
 
 # Uvodna beseda
 
-Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom, kakšno je tveganje po statističnih regijah skozi čas in kako na tveganje vplivajo stopnja izobrazbe, starost in velikost družine. Primerjal bom spola in prikazal podobnosti ter razlike. [@SURS]
+Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom, kakšno je tveganje po statističnih regijah skozi čas in kako na tveganje vplivajo stopnja izobrazbe, starost in velikost družine. Primerjal bom spola in prikazal podobnosti ter razlike. 
 
 # Obdelava, uvoz in čiščenje podatkov
 
@@ -45,13 +46,13 @@ Podatke imam v štirih razpredelnicah v obliki *tidy data*, ki sem jih dejansko 
 kable(head(izobrazba1))
 ```
 
-STOPNJA TVEGANJA REVŠČINE je odstotek oseb, ki živijo v gospodinjstvih z ekvivalentnim (neto) razpoložljivim dohodkom, nižjim od praga tveganja revščine. PRAG TVEGANJA REVŠČINE se določi (izračuna) kot 60 % mediane ekvivalentnega (neto) razpoložljivega dohodka vseh gospodinjstev. Za izračun EKVIVALENTNEGA DOHODKA (dohodka na ekvivalentnega odraslega člana gospodinjstva) se uporablja prilagojeno OECD-jevo ekvivalenčno lestvico. Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 ali več let, pa utež 0,5.
+STOPNJA TVEGANJA REVŠČINE je odstotek oseb, ki živijo v gospodinjstvih z ekvivalentnim (neto) razpoložljivim dohodkom, nižjim od praga tveganja revščine. PRAG TVEGANJA REVŠČINE se določi (izračuna) kot 60 % mediane ekvivalentnega (neto) razpoložljivega dohodka vseh gospodinjstev. Za izračun EKVIVALENTNEGA DOHODKA (dohodka na ekvivalentnega odraslega člana gospodinjstva) se uporablja prilagojeno OECD-jevo ekvivalenčno lestvico. Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 ali več let, pa utež 0,5. [@SURS]
 
 ```{r regije1, echo=FALSE}
 kable(head(regije1))
 ```
 
-STOPNJA TVEGANJA REVŠČINE je odstotek oseb, ki živijo v gospodinjstvih z ekvivalentnim (neto) razpoložljivim dohodkom, nižjim od praga tveganja revščine. PRAG TVEGANJA REVŠČINE se določi (izračuna) kot 60 % mediane ekvivalentnega (neto) razpoložljivega dohodka vseh gospodinjstev. Za izračun EKVIVALENTNEGA DOHODKA (dohodka na ekvivalentnega odraslega člana gospodinjstva) se uporablja prilagojeno OECD-jevo ekvivalenčno lestvico. Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 ali več let, pa utež 0,5.
+STOPNJA TVEGANJA REVŠČINE je odstotek oseb, ki živijo v gospodinjstvih z ekvivalentnim (neto) razpoložljivim dohodkom, nižjim od praga tveganja revščine. PRAG TVEGANJA REVŠČINE se določi (izračuna) kot 60 % mediane ekvivalentnega (neto) razpoložljivega dohodka vseh gospodinjstev. Za izračun EKVIVALENTNEGA DOHODKA (dohodka na ekvivalentnega odraslega člana gospodinjstva) se uporablja prilagojeno OECD-jevo ekvivalenčno lestvico. Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 ali več let, pa utež 0,5. [@SURS]
 
 ```{r prag1, echo=FALSE}
 kable(head(prag1))
@@ -59,7 +60,7 @@ kable(head(prag1))
 
 PRAG TVEGANJA REVŠČINE je opredeljen s 60 % mediane ekvivalentnega neto razpoložljivega dohodka vseh gospodinjstev ob upoštevanju OECD-jeve prilagojene ekvivalenčne lestvice.
 Lestvica daje prvemu odraslemu članu utež 1, otrokom, mlajšim od 14 let, utež 0,3, drugim članom, starim 14 let ali več, pa utež 0,5. Štiričlansko gospodinjstvo dveh odraslih in dveh otrok ima tako 2,1 ekvivalentnega odraslega člana (izračun: 1x1+1x0,5+2x0,3=2,1), dvočlansko gospodinjstvo dveh odraslih oseb pa 1,5 ekvivalentnega člana (izračun: 1x1+1x0,5=1,5). 
-EKVIVALENTNI DOHODEK (dohodek na ekvivalentnega odraslega člana gospodinjstva) se izračuna tako, da se sešteje dohodke vseh članov gospodinjstva in nato deli s številom ekvivalentnih odraslih članov v gospodinjstvu.
+EKVIVALENTNI DOHODEK (dohodek na ekvivalentnega odraslega člana gospodinjstva) se izračuna tako, da se sešteje dohodke vseh članov gospodinjstva in nato deli s številom ekvivalentnih odraslih članov v gospodinjstvu. [@SURS]
 
 #Analiza in vizualizacija
 ###Prag tveganja revščine
@@ -120,7 +121,7 @@ Kot smo ugotovili že pri zemljevidu, se je stanje glede stopnje tveganja revš�
 
 Ugotovil sem, da se po šoku zaradi krize stopnja tveganja revščine ponovno zmanjšuje, kar povečuje blaginjo naše države. Izravnavajo se tudi razlike med spoloma na tem področju, ki so bile v preteklosti občutno večje. Pravtako se izravnavajo razlike med regijami. Napovedi kažejo na nadaljno rast meje praga tveganja revščine.
 
-
+#References
 
 
 
