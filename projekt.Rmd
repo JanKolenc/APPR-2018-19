@@ -27,7 +27,7 @@ source('lib/rstudio.r', encoding='UTF-8')
 
 # Uvodna beseda
 
-Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom kakšno je tveganje po statističnih regijah skozi čas in kako na tveganje vpliva stopnja izobrazbe, starost in velikost družine. Primerjal bom spola in prikazal podobnosti ter razlike.
+Prikazal bom stopnjo in prag tveganja revščine v Sloveniji. Prikazal bom, kakšno je tveganje po statističnih regijah skozi čas in kako na tveganje vplivajo stopnja izobrazbe, starost in velikost družine. Primerjal bom spola in prikazal podobnosti ter razlike. [@SURS]
 
 # Obdelava, uvoz in čiščenje podatkov
 
@@ -37,7 +37,7 @@ source("uvoz/uvoz.r", encoding="UTF-8")
 
 
 Uvozil sem podatke o revščini v obliki CSV s statističnega urada. 
-Podatke imam v 3 razpredelnicah v obliki *tidy data* ki sem jih dejansko razbil na 34 razpredelnic po letih.
+Podatke imam v štirih razpredelnicah v obliki *tidy data*, ki sem jih dejansko razbil na 34 razpredelnic po letih.
 
 
 
@@ -72,7 +72,7 @@ source("vizualizacija/vizualizacija.r", encoding='UTF-8')
 plot(graf.prag.tveganja)
 ```
 
-Iz grafa lahko razberemo, da je prag tveganja lepo rastel vse do gospodarske krize leta 2008 takrat je celo malce padel potem pa vse do danes stagniral z manjšimi spremembami.
+Iz grafa lahko razberemo, da je prag tveganja lepo rastel vse do gospodarske krize, leta 2008. Takrat je celo malce padel, potem pa vse do danes stagniral z manjšimi spremembami. Na grafu so prikazane 3 krivulje, ki prikazujejo različne vrste gospodinjstev. Na vseh opazimo iste trende. Ker gre za utežene povprečne letne plače glede na družinske člane, se krivulje razlikujejo le za konstante.
 
 ```{r analiza, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, results='hide'}
 source('analiza/analiza.r', encoding='UTF-8')
@@ -84,7 +84,7 @@ source('analiza/analiza.r', encoding='UTF-8')
 plot(graf.napovedi.praga)
 ```
 
-Zgoraj sem pripravil model ki prikazuje napoved za orag tveganja revščine za leta 2018-2020 kot podatke sem vzel leta 2005-2017  pričemer pa se vidi hitra rast praga tik pred krizo v letih 2005-2008 kar nam prikaže malce nerealne napovedi zato sem zanemaril prva tri leta in pripravil nov model(spodaj) ki prikazuje realnejše napovedi. 
+Zgoraj sem pripravil model, ki prikazuje napoved za prag tveganja revščine med leti 2018 in 2020. Kot podatke sem vzel leta 2005-2017, pri čemer pa se vidi hitra rast praga tik pred krizo v letih 2005-2008. To nam prikaže malce nerealne napovedi, zato sem zanemaril prva tri leta in pripravil nov model(spodaj), ki prikazuje realnejše napovedi. 
 
 ```{r graf.napovedi.praga.realne, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
 plot(graf.napovedi.praga.realne)
@@ -98,7 +98,7 @@ plot(graf.napovedi.praga.realne)
 shinyAppDir("shiny", options=list(width="100%", height=600))
 ```
 
-Z zgornjih zemljevidov lahko spremljamo spremembe stopnje tveganja revščine po statističnih regijah. Opazimo da se je najbolj stanje izboljšalo v Severo-Vzhodnem delu države najbolj vidno v pomurski regiji.V južni in jugo-vzhodni sloveniji je skozi čas stopnja tveganja stagnirala stanje pa se je poslabšalo predvsem na gorenjskem.
+Iz zgornjih zemljevidov lahko spremljamo spremembe stopnje tveganja revščine po statističnih regijah. Opazimo, da se je najbolj stanje izboljšalo v severovzhodnem delu države, predvsem v pomurski regiji.V južni in jugovzhodni Sloveniji je skozi čas stopnja tveganja stagnirala, stanje pa se je poslabšalo predvsem na Gorenjskem.
 
 
 ###Primerjava spolov
@@ -106,7 +106,7 @@ Z zgornjih zemljevidov lahko spremljamo spremembe stopnje tveganja revščine po
 plot(graf.prag.tveganja.izobrazba.s)
 ```
 
-Z zgornjega grafa razberemo, da so ženske bolj naklonjene tveganju revščine neglede na izobrazbo. Izjema so bile ženske z visokošolsko ali višješolsko izbrazbo do leta 2013. Dober znak iskanja ravnovesja med spoloma je to da se razlike v tveganju skozi leta vedno manjše.
+Iz zgornjega grafa razberemo, da so ženske bolj naklonjene tveganju revščine, neglede na izobrazbo. Izjema so bile ženske z visokošolsko ali višješolsko izbrazbo do leta 2013. Dober znak iskanja ravnovesja med spoloma, je to, da se razlike v tveganju skozi leta vedno manjše.
 
 ###Stopnja tveganja revščine in stopnja registrirane brezposelnosti
 ```{r graf.prag, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=7, fig.width=10}
@@ -114,11 +114,11 @@ graf.prag
 ```
 
 Zgornji graf primerja stopnjo registrirane brezposelnosti in stopnjo tveganja revščine skozi leta po statističnih regijah.
-Kot smo ugotovili že pri zemljevidu se je stnje glede stopnje tveganja revščine najbolj izboljšala v pomurski regiji ampak se je ravno tam zvišala stopnja registrirane brezposelnosti. Iz tega bi lahko sklepal da so v tem delu zaprli mnogo delovnih mest z nižjimi plačami in odprli manj delovnih mest z višjimi plačami. Če se osredotočimo še na osrednjo Slovenijo vidimo da se je po krizi pa vse do leta 2014 stanje glede brezposelnosti in sopnje tveganja revščine slabšalo. Po letu 2014 se opazi izboljšanje glede stopnje brezposelnosti kasneje pa tudi glede stopnje tveganja brezposelnosti. Stanje pa se še ni povrnilo do takega nivoja kot je bil pred krizo.
+Kot smo ugotovili že pri zemljevidu, se je stanje glede stopnje tveganja revščine najbolj izboljšalo v pomurski regiji, vendar se je hkrati tam zvišala tudi stopnja registrirane brezposelnosti. Iz tega bi lahko sklepal, da so v tem delu zaprli mnogo delovnih mest z nižjimi plačami in odprli manj delovnih mest z višjimi plačami. Če se osredotočimo še na osrednjo Slovenijo, vidimo, da se je po krizi pa vse do leta 2014 stanje glede brezposelnosti in sopnje tveganja revščine slabšalo. Po letu 2014, se opazi izboljšanje glede stopnje brezposelnosti, kasneje pa tudi glede stopnje tveganja revščine. Stanje pa se še ni povrnilo v prvotno(pred krizo).
 
 #Zaključna beseda
 
-Ugotovil sem da se po šoku zaradi krize stopnja tveganja revščine ponovno zmanjšuje kar povečuje blaginjo naše države. Izravnavajo se tudi razlike med spoloma na tem področju ki so bile v preteklosti občutno večje. Pravtako se izravnavajo razlike med regijami.
+Ugotovil sem, da se po šoku zaradi krize stopnja tveganja revščine ponovno zmanjšuje, kar povečuje blaginjo naše države. Izravnavajo se tudi razlike med spoloma na tem področju, ki so bile v preteklosti občutno večje. Pravtako se izravnavajo razlike med regijami. Napovedi kažejo na nadaljno rast meje praga tveganja revščine.
 
 
 
